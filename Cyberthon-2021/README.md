@@ -14,7 +14,7 @@ Many thanks to CSIT and Alt-Tab Labs for training us and creating a fruitful exp
 ---
 
 ## Solved (during)
-* Aaand It's Gone
+* [Aaand It's Gone](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon-2021/Finals/Aaand%20It's%20Gone)
 * History Lesson
 
 ## Solved (after)
