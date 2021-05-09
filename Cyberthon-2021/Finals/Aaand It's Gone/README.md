@@ -6,7 +6,7 @@ Seems like APOCALYPSE has been up to no good again. They've been running a certa
 ## Attached files
 * flag.corrupted
 * gone.py
-## gone.py
+### gone.py
 ```python
 from random import randint
 
