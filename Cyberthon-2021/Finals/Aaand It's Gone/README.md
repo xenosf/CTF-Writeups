@@ -4,8 +4,9 @@
 ## Challenge Description
 Seems like APOCALYPSE has been up to no good again. They've been running a certain program to corrupt a random portion of everyone's files and causing chaos all around. Could you please help to reverse engineer their code and see if it's possible to recover the flag?
 ## Attached files
-### flag.corrupted
-### gone.py
+* flag.corrupted
+* gone.py
+## gone.py
 ```python
 from random import randint
 
@@ -92,4 +93,4 @@ I chose to write the above script in 2 parts as it was easier for me to conceptu
 ### flag_2.txt
 ```:CbrhnQf5QaWf�fV49R7SdbS216]8Rf7U03eRdR3c[8Z92f1W2SeW30cJ7```
 
-Hooray we have the flag now 👍👍
+It's clear that `flag1_txt` contains the correct output, and that `data1` was the part that got Thanos-snapped in the original file. We now have the flag! Hooray 👍👍
