@@ -38,7 +38,7 @@ else:
 ```
 ---
 ## Solution
-From the code, we can see that this ~~yeets~~ deletes a randomly chosen half of the data, replacing it with `data3`, which is `data1` ⊕ (xor) `data2`.
+From the code, we can see that this ~~yeets~~ deletes a randomly chosen half of the data, replacing it with `data3`, which is `data1` ⊕ (XOR) `data2`.
 
 Luckily for us, we can easily get `data1` / `data2` back by XORing `data3` with `data2` / `data1` respectively. This is due to the properties of XOR:
 
