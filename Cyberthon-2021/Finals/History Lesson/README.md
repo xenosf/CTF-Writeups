@@ -26,6 +26,7 @@ The next most logical place to look would be `moz_places`.
 <img width="460" alt="Screenshot 2021-05-10 at 08 58 07" src="https://user-images.githubusercontent.com/40383042/117594228-41017480-b170-11eb-8f97-0929ae40d38a.png">
 
 Jackpot. All we need to do now is find the flag. After scrolling past comedy gold such as
+
 > is teamviewer a virus - Google Search
 
 > Amazon.com : hello kitty luggage (x2!)
@@ -33,6 +34,7 @@ Jackpot. All we need to do now is find the flag. After scrolling past comedy gol
  > what do I do if my life is a meme - Google Search
 
 we finally land on
+
 > I hope no one sees this - Pastebin.com
 
 Well, that's not suspicious at all. Nope. Not one bit. Totally innocent.

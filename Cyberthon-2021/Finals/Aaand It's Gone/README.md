@@ -94,3 +94,7 @@ I chose to write the above script in 2 parts as it was easier for me to conceptu
 ```:CbrhnQf5QaWf�fV49R7SdbS216]8Rf7U03eRdR3c[8Z92f1W2SeW30cJ7```
 
 It's clear that `flag1_txt` contains the correct output, and that `data1` was the part that got Thanos-snapped in the original file. We now have the flag! Hooray 👍👍
+
+```
+Cyberthon{f750a0f1ff4b977ed7bf2a10688ef4740e35edd63aca8c9c29fb152ee63d03cb7}
+```
