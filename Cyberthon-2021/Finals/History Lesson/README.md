@@ -17,7 +17,7 @@ Using DB browser for sqlite, I opened the file.
 
 <img width="1149" alt="Screenshot 2021-05-10 at 08 57 32" src="https://user-images.githubusercontent.com/40383042/117594455-a35a7500-b170-11eb-9187-9814eb30c836.png">
 
-Aha! There's a table called `moz_inputhistory`! But alas, this table only contained place IDs.
+Aha! There's a table called `moz_historyvisits`! But alas, this table only contained place IDs.
 
 <img width="459" alt="Screenshot 2021-05-10 at 08 57 48" src="https://user-images.githubusercontent.com/40383042/117594196-27602d00-b170-11eb-8878-5ac1236a90d5.png">
 
