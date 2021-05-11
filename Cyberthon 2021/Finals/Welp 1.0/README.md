@@ -39,13 +39,21 @@ The first argument of the function is the modulus `n`, and the second argument i
 
 But APOCALYPSE did a whoopsie and made `e` laughably small. Welp indeed.
 
-We can reverse this by square-rooting the ciphertext. To deal with the `mod n`, we can bruteforce its coefficient `k` as the flag is short enough for it to be manageable.
+The ciphertext is computed as follows:
+
+![equation for ciphertext (Sorry for the Comic Sans)](https://user-images.githubusercontent.com/40383042/117807484-43f28700-b28e-11eb-8418-4451515a62a2.png)
+
+We can reverse this by taking the `e`th root of the ciphertext. To deal with the `mod n`, we can bruteforce its coefficient `k`.
+
+![equation for plaintext (SIKE I'm not)](https://user-images.githubusercontent.com/40383042/117807491-4523b400-b28e-11eb-9c67-c63d5b52b9b8.png)
 
 With this knowledge, we can write a script that lets us decode the flag.
 
-However, my initial implementation used base Python math functions, which could not handle the large numbers. This resulted in decoding of only the first 7 characters of the file \<\/3 and I had no idea how to fix this.
+However, my initial implementation used base Python math functions, which could not handle the large numbers. This resulted in decoding of only the first 7 characters of the file, and I had no idea how to fix this.
 
-Revisiting the problem afterwards (and taking a look at another write-up^), I found the library `gmpy2` which could handle large numbers, and has a convenient function `iroot` which allows us to find the `n`th root of a number, and tells us whether or not it is exact.
+![cyberth](https://user-images.githubusercontent.com/40383042/117807442-376e2e80-b28e-11eb-9d28-d17688f0c915.png)
+
+Revisiting the problem afterwards (and taking a look at another write-up^), I found the library `gmpy2` which could handle large numbers, and has a convenient function `iroot` which allows us to find the nth root of a number, and tells us whether or not it is exact.
 
 Using this library, I wrote a new script:
 
