@@ -41,11 +41,13 @@ But APOCALYPSE did a whoopsie and made `e` laughably small. Welp indeed.
 
 The ciphertext is computed as follows:
 
-![equation for ciphertext (Sorry for the Comic Sans)](https://user-images.githubusercontent.com/40383042/117807484-43f28700-b28e-11eb-8418-4451515a62a2.png)
+<img src="https://user-images.githubusercontent.com/40383042/117807484-43f28700-b28e-11eb-8418-4451515a62a2.png" height="50" alt="ciphertext = plaintext^e (mod n)">
 
 We can reverse this by taking the `e`th root of the ciphertext. To deal with the `mod n`, we can bruteforce its coefficient `k`.
 
-![equation for plaintext (SIKE I'm not)](https://user-images.githubusercontent.com/40383042/117807491-4523b400-b28e-11eb-9c67-c63d5b52b9b8.png)
+<img src="https://user-images.githubusercontent.com/40383042/117807491-4523b400-b28e-11eb-9c67-c63d5b52b9b8.png" height="80" alt="plaintext = root[e](ciphertext+kn)">
+
+~~(I'm not sorry for the Comic Sans. It's what this RSA implementation deserves.)~~
 
 With this knowledge, we can write a script that lets us decode the flag.
 
