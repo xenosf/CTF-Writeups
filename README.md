@@ -7,4 +7,4 @@ There are also write-ups of flags I only solved afterwards, for documentation pu
 
 ## CTFs
 * Whitehacks 2021 [didn't do write-ups]
-* [Cyberthon 2021](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon-2021)
+* [Cyberthon 2021](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021)
