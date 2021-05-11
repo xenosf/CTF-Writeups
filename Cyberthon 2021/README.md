@@ -14,10 +14,10 @@ Many thanks to CSIT and Alt-Tab Labs for training us and creating a fruitful exp
 ---
 
 ## Solved (during)
-* [Aaand It's Gone](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon-2021/Finals/Aaand%20It's%20Gone) (298pts)
-* [History Lesson](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon-2021/Finals/History%20Lesson) (653pts)
+* [Aaand It's Gone](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Aaand%20It's%20Gone) (298pts)
+* [History Lesson](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/History%20Lesson) (653pts)
 
 ## Solved (after)
-* [Secret Briefing](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon-2021/Finals/Secret%20Briefing)
+* [Secret Briefing](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Secret%20Briefing)
 * [Welp 1.0](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Welp%201.0)
 * [Welp 2.0](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Welp%202.0)
