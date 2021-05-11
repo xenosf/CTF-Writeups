@@ -50,8 +50,8 @@ with open('pubkey.pem', 'rb') as f:
 with open('flag.txt.encrypted', 'rb') as f:
     ciphertext = bytes_to_long(f.read())
 
-for n in range(0, 1000):
-    plaintext, exact = gmpy2.iroot(ciphertext + n*rsa.n, rsa.e)
+for k in range(0, 1000):
+    plaintext, exact = gmpy2.iroot(ciphertext + k*rsa.n, rsa.e)
     if exact:
         with open(f'flag.txt', 'wb') as f:
             f.write(long_to_bytes(plaintext))
