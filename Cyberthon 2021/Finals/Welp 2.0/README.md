@@ -29,7 +29,7 @@ with open('./dist/pubkey.pem', 'wb') as f:
 ```
 ---
 ## Solution
-Comparing `generate.py` to the one from [Welp 1.0](insertlinkhere), it was nearly identical, save for this line:
+Comparing `generate.py` to the one from [Welp 1.0](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Welp%201.0), it was nearly identical, save for this line:
 
 ```python
 rsa = RSA.construct((getPrime(512) * getPrime(512), 5))
@@ -58,7 +58,7 @@ for n in range(0, 1000):
         break
 ```
 
-I went into more detail in [the earlier write-up](), and it's pretty much all the same stuff.
+I went into more detail in [the earlier write-up](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Welp%201.0), and it's pretty much all the same stuff.
 
 Running the script gives us the flag:
 

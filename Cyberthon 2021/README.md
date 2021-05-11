@@ -19,4 +19,5 @@ Many thanks to CSIT and Alt-Tab Labs for training us and creating a fruitful exp
 
 ## Solved (after)
 * [Secret Briefing](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon-2021/Finals/Secret%20Briefing)
-
+* [Welp 1.0](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Welp%201.0)
+* [Welp 2.0](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Welp%202.0)
