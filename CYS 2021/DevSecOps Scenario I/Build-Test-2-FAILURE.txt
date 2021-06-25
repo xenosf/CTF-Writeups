@@ -1,0 +1,69 @@
+Started by upstream project "Devskim - Scan" build number 3
+originally caused by:
+ Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Truffle Hog - Scan
+No credentials specified
+Cloning the remote Git repository
+Cloning repository http://gitlab/root/opensource-job-portal.git
+ > git init /var/lib/jenkins/workspace/Truffle Hog - Scan # timeout=10
+Fetching upstream changes from http://gitlab/root/opensource-job-portal.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- http://gitlab/root/opensource-job-portal.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://gitlab/root/opensource-job-portal.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://gitlab/root/opensource-job-portal.git # timeout=10
+Fetching upstream changes from http://gitlab/root/opensource-job-portal.git
+ > git fetch --tags --force --progress -- http://gitlab/root/opensource-job-portal.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bd9fae8ba3d27635960a95f600f08db3a85fe1d8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bd9fae8ba3d27635960a95f600f08db3a85fe1d8 # timeout=10
+Commit message: "changed password thingy"
+First time build. Skipping changelog.
+[Truffle Hog - Scan] $ /bin/sh -xe /tmp/jenkins8737012020977949385.sh
++ /trufflehog.sh
+Cloning into 'opensource-job-portal'...
+{
+  "branch": "origin/master",
+  "commit": "initial commit\n",
+  "commitHash": "ebe52c3d39bc9e247d3fa18b6e2999782967bf68",
+  "date": "2021-05-18 01:56:27",
+  "diff": "@@ -0,0 +1 @@\n+{\"web\":{\"client_id\":\"373102698654.apps.googleusercontent.com\",\"project_id\":\"peeljobs-com\",\"auth_uri\":\"https://accounts.google.com/o/oauth2/auth\",\"token_uri\":\"https://accounts.google.com/o/oauth2/token\",\"auth_provider_x509_cert_url\":\"https://www.googleapis.com/oauth2/v1/certs\",\"client_secret\":\"b7rA_4OWMBshb_t28AU6W7Tf\",\"redirect_uris\":[\"urn:ietf:wg:oauth:2.0:oob\",\"http://www.peeljobs.com/social/google/\",\"http://www.peeljobs.com/social/google_login/\",\"http://www.peeljobs.com/social/google/friends/\",\"http://www.peeljobs.com/social/google_connect/\",\"http://test.peeljobs.com:8000/social/google/\",\"http://localhost:8000/oauth2callback/\",\"http://www.peeljobs.com/oauth2callback/\",\"http://test.peeljobs.com:8000/oauth2callback/\",\"http://test.peeljobs.com:8000/social/google_login/\",\"http://test.peeljobs.com:8001/social/google/\",\"http://test.peeljobs.com:8000/social/google/friends/\",\"http://test.peeljobs.com:8000/social/google_connect/\",\"http://peeljobs.com/social/google_connect/\",\"http://peeljobs.com/social/google/friends/\",\"http://peeljobs.com/social/google_login/\",\"http://localhost:8000/social/google_login/\",\"http://www.peeljobs.com/recruiter/google/\",\"http://www.peeljobs.com/recruiter/google_login/\",\"http://www.peeljobs.com/recruiter/google_connect/\",\"http://www.peeljobs.com/recruiter/google/friends/\",\"https://peeljobs.com/recruiter/google_login/\",\"https://peeljobs.com/recruiter/google/friends/\",\"https://peeljobs.com/recruiter/google_connect/\",\"https://peeljobs.com/social/google_login/\",\"https://peeljobs.com/social/google/friends/\",\"https://peeljobs.com/social/google_connect/\",\"https://test.peeljobs.com:8000/social/google/\",\"https://test.peeljobs.com:8000/social/google_login/\",\"http://localhost\",\"https://test.peeljobs.com:8000/dashboard/google_login/\",\"http://test.peeljobs.com:8000/dashboard/google_login/\",\"https://test.peeljobs.com:8000/social/google_connect/\",\"http://test.peeljobs.com:8000/recruiter/google_login/\",\"http://test.peeljobs.com:8000/\",\"http://test.peeljobs.com:8000/forum/gp_login/\",\"https://peeljobs.com/forum/gp_login/\",\"http://test.peeljobs.com:8000/social/google-login/\",\"https://peeljobs.com/social/google-login/\",\"https://peeljobs.com/social/google-connect/\",\"http://test.peeljobs.com:8000/social/google-connect/\",\"http://test.peeljobs.com:8000/dashboard/google-login/\",\"https://peeljobs.com/dashboard/google-login/\",\"https://peeljobs.com/dashboard/google_login/\",\"https://stage.peeljobs.com/dashboard/google_login/\",\"https://stage.peeljobs.com/social/google_login/\",\"http://elreport.peeljobs.com:3000/login/google\",\"http://elreport.peeljobs.com:3000/login/google/\",\"http://stage.peeljobs.com:8001/dashboard/google_login/\"],\"javascript_origins\":[\"http://p.peeljobs.com\",\"http://peeljobs.com\",\"http://www.peeljobs.com\",\"http://recruiter.peeljobs.com\",\"http://r.peeljobs.com\"]}}\n\\ No newline at end of file\n",
+  "path": "client_secret.json",
+  "printDiff": "\u001b[93m\"client_secret\":\"b7rA_4OWMBshb_t28AU6W7Tf\"\u001b[0m",
+  "reason": "Google Oauth",
+  "stringsFound": [
+    "\"client_secret\":\"b7rA_4OWMBshb_t28AU6W7Tf\""
+  ]
+}
+{
+  "branch": "origin/master",
+  "commit": "initial commit\n",
+  "commitHash": "ebe52c3d39bc9e247d3fa18b6e2999782967bf68",
+  "date": "2021-05-18 01:56:27",
+  "diff": "@@ -0,0 +1,113 @@\n+# Environment variables guidelines\n+- All environment variables defined below and their usage.\n+- Kindly add below environment variables to your local development with appropriate key/value accordingly.\n+\n+### Common keys\n+> DEBUG=True/False\n+> SECRET_KEY=\"\"\n+> HTML_MINIFY=True/False\n+> ENV_TYPE=\"DEV\" or \"PROD\"\n+> DEFAULT_FROM_EMAIL='PeelJobs <support@peeljobs.com>'\n+> CONTACT_NUMBER='+91 8500 099 499'\n+> PEEL_URL=\"http://peeljobs.com/\"\n+> CACHE_BACKEND = \"memcached://127.0.0.1:11211/\"\n+> MINIFIED_URL=''\n+\n+### Celery keys\n+> BROKER_API=\"http://guest:guest@localhost:15672/api/\"\n+> CELERY_BROKER_URL='redis://localhost:6379/1'\n+> CELERY_RESULT_BACKEND = \"redis://localhost:6379\"\n+\n+### Google authentication keys\n+> GPCLIENTID=\"\"\n+> GPCLIENTSECRET=\"\"\n+> CLIENT_SECRET_DATA=\"\"\n+> GOOGLEOAUTH2REDIRECT='https://peeljobs.com/oauth2callback/'\n+> GOOGLE_OAUTH2_REDIRECT='http://localhost:8000/oauth2callback/'\n+\n+### Facebook keys\n+> FBACCESSTOKEN=\"\"\n+> FBPAGEACCESSTOKEN=\"\"\n+> FBGROUPACCESSTOKEN=\"\"\n+> FBALLGROUPSTOKEN=\"\"\n+> FBDELACCESSTOKEN=\"\"\n+> RECFBACCESSTOKEN=\"\"\n+\n+### Elasticsearch keys\n+> HAYSTACKURL='http://127.0.0.1:9200/'\n+\n+### Postgresql DB keys\n+> DB_NAME='peeljobs'\n+> DB_USER='postgres'\n+> DB_PASSWORD='root'\n+> DB_HOST='127.0.0.1'\n+> DB_PORT='5432'\n+\n+### Stack Overflow keys\n+> SOFAPPID=\"7099\"\n+> SOFAPPSECRET=\"\"\n+> SOFAPPKEY=\"\"\n+\n+### Github keys\n+> GITAPPID=\"\"\n+> GITAPPSECRET=\"\"\n+> GITREDIRECTURI=\"http://www.peeljobs.com/social/github/\"\n+\n+### Twitter keys\n+> twoauthtokensecret=''\n+> twoauthtoken=''\n+> TWAPPKEY=\"\"\n+> TWAPPSECRET=\"\"\n+> OAUTHTOKEN=''\n+> OAUTHSECRET=''\n+> PJTWAPPKEY=\"\"\n+> PJTWAPPSECRET=\"\"\n+\n+### Facebook Integration keys\n+> FBAPPID=\"\"\n+> FBSECRET=\"\"\n+> FBPEELJOBSPAGEID=\"\"\n+\n+### Linkedin Integration keys\n+> LNAPIKEY=\"\"\n+> LNSECRETKEY=\"\"\n+> LNCOMPANYID=\"\"\n+> LNOAUTHUSERTOKEN=\"\"\n+> LNOAUTHUSERSECRET=\"\"\n+\n+### Google recaptcha keys\n+> RECAPTCHAPUBLICKEY=\"\"\n+> RECAPTCHAPRIVATEKEY=\"\"\n+\n+### Sendgrid authentication keys\n+> SGUSER=''\n+> SGPWD=''\n+\n+### SMS api keys\n+> BULKSMSUSERNAME='micropyramid'\n+> BULKSMSPASSWORD=''\n+> BULKSMSFROM=''\n+> SETTINGSFILE=''\n+> SMSAUTHKEY=''\n+\n+### Mailgun keys\n+> MAILGUN_API_KEY=''\n+\n+### AWS keys\n+> AWS_STORAGE_BUCKET_NAME=\"\"\n+> AWS_ACCESS_KEY=''\n+> AWS_SECRET_KEY=''\n+> CLOUDFRONT_DOMAIN = \"\"\n+> CLOUDFRONT_ID=''\n+> AWSENABLED=\"\"\n+> AWS_ACCESS_KEY_FOR_ANYMAIL_SES=\"\"\n+> AWS_SECRET_KEY_FOR_ANYMAIL_SES=\"\"\n+> AWS_LOCATION_FOR_ANYMAIL_SES=\"\"\n+\n+### Sentry keys\n+> SENTRY_DSN=''\n+\n+### Elastic APM keys\n+> ELASTIC_APM_SERVICE_NAME=''\n+> ELASTIC_APM_SECRET_TOKEN=''\n+> ELASTIC_APM_SERVER_URL=''\n\\ No newline at end of file\n",
+  "path": "env.md",
+  "printDiff": "\u001b[93mhttp://guest:guest@localhost:15672/api/\"\n\u001b[0m",
+  "reason": "Password in URL",
+  "stringsFound": [
+    "http://guest:guest@localhost:15672/api/\"\n"
+  ]
+}
+{
+  "branch": "origin/master",
+  "commit": "initial commit\n",
+  "commitHash": "ebe52c3d39bc9e247d3fa18b6e2999782967bf68",
+  "date": "2021-05-18 01:56:27",
+  "diff": "@@ -0,0 +1,38 @@\n+-----BEGIN OPENSSH PRIVATE KEY-----\n+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn\n+NhAAAAAwEAAQAAAYEAystX0Nt7u9PtrCsQP52Ntdy1yexTafPo4g/dXNM89PyWG6oy6G86\n+SECovN0+s8bpNpLVmTdDO2GkU8A04h1CyiUNu2xP/d1Ad2Rm7Wd/21BjsqoaFeiDGgRK1f\n+0lzk+UYqEQViWfbDK7CkZ1CttWcIMxsYIyONF3E1xMLRfSAj7uBal6boo5ujjvU1BYUuAa\n+gNaGdb30aGyncRlRPPeDTgmk2mNQ0FM6/gTsjetOIIaKMZyOHtQEaQL3YNcZtqWHlgLL4q\n+Zgwg0AhfnkEsjbl7W2YDj+1TaJIccBLGOiVfquYXK/23eIesrR5wc3u6NgBAh5AckXjvm1\n+d20G1ZVdbBKfpG2fWiLkArrYHp3bApzF42ajxB6bLaP3b2NjiTKitAKEnzoXjGbaRgkunV\n+wzbTFEGGQn1hwCVuDpOo49udVyKbFJth8Z1wZHuhTbMuY/RACVitXgYvwm5Ud0dUvUW9Iv\n+B8RVZK1r1Fw3yTpzF9UZoiWRBUDga0GGodt2+Td1AAAFiFZZUy1WWVMtAAAAB3NzaC1yc2\n+EAAAGBAMrLV9Dbe7vT7awrED+djbXctcnsU2nz6OIP3VzTPPT8lhuqMuhvOkhAqLzdPrPG\n+6TaS1Zk3QzthpFPANOIdQsolDbtsT/3dQHdkZu1nf9tQY7KqGhXogxoEStX9Jc5PlGKhEF\n+Yln2wyuwpGdQrbVnCDMbGCMjjRdxNcTC0X0gI+7gWpem6KObo471NQWFLgGoDWhnW99Ghs\n+p3EZUTz3g04JpNpjUNBTOv4E7I3rTiCGijGcjh7UBGkC92DXGbalh5YCy+KmYMINAIX55B\n+LI25e1tmA4/tU2iSHHASxjolX6rmFyv9t3iHrK0ecHN7ujYAQIeQHJF475tXdtBtWVXWwS\n+n6Rtn1oi5AK62B6d2wKcxeNmo8Qemy2j929jY4kyorQChJ86F4xm2kYJLp1cM20xRBhkJ9\n+YcAlbg6TqOPbnVcimxSbYfGdcGR7oU2zLmP0QAlYrV4GL8JuVHdHVL1FvSLwfEVWSta9Rc\n+N8k6cxfVGaIlkQVA4GtBhqHbdvk3dQAAAAMBAAEAAAGAJqOd5M6dAcm8hExkOSrE4HzgKk\n+wcDJkLq18Id3JMMAWceELyljTzLuca/3lMRCbHMr3BcwMDjWHqVIbPzLF0k12CA0784srw\n+SI9ZySwqQVhM1rLwa3I04JUmySUFugyRokU7/p4GhTAZUTjhfiMSkjd9FWxQM2E9xfOVFB\n+Zwzjq9UVjcWgl+PEwy1XX+jjPi+N9nGTILSoZBVRxUzT//xbOytGWt9TOWjuXTSKsn5Kyd\n+0hwZPCh7eqK1Db+OR628E/K0ZVKWTSpDrSnme3+EYAzRtSSqYiL2BARTv7r6CIDVTEGt54\n+ecW4IwCwwPuhfGVrJJ6OsWg16HJT8Lu5k/mA8vxqfwdf2pHBQkB1qSmnRvj+0ntJhhHch1\n+GAeDAfbRC3V730WYI/bS3NQej9Ckw75tsT9HMv75TCfph/ElQyIr7eNafKo1xEo018FgLj\n+InHA2FwO5UcHKg63/03/iEwwALAsfVnChDqw65wAGW/vor5aQvZuTHm7XF7JiMz4IVAAAA\n+wDkCleqTIF0vSiJih8yTKF6lfZem75eb3OaLCux/ZprhGkUKUHnZ8RflGKBX5m1mfUVzxM\n+caFeo1HneSmqwIDsd/yrgiA8kC15D0HWLPRzSYVPBfTrT4x8W8CoA0S2FYxFi185moq34z\n+GiTiUbJVf7iN5nYwGbEFhP/IIIx+HxqT751x18+59EKqd+4VE8pEj+59z0NfZOb3ZxSnYW\n+HUsL2xg5ATL52RSk3Eov0xJBmnT79gsiqufdcUGdv8PQsYJQAAAMEA5/ksZcpbQZlJ3aJK\n+KhDrJ0WmhrX0ZT7aO6laI1KYAqICFJ6rNntQWwMMT8082CbhGt2WWSLgJhDw+nJxTXNBUc\n+Y/0nJkwqqKG5l2InrGnqY2uNxUJyW+Zy60WtBvsgXSng90Q70+/HJjg+n8AcGYSmt2zlG7\n+7T8g+E3Zv8u6LWCPgLKVwKOtaByElSBex+ZV1WmTmBTF3rszw7eYKMLs4lEwmdKsSKiUy9\n+08upP91TQ4+Q2hE1yGPTnKG1qA9DbnAAAAwQDfzHsjaZx/w4yEwrUV7IcXf8AZrGGScZS4\n+GpUDea8VuN6MCNPGJVOibJIWKyRHEkpA9jm+gPTqJhORATTa1gFCm8JAFEyyHo2nTf3OKS\n+YfoaR1qbTAVc0BojQVe/MCvnQ78rVl5I291m7aFpmBW6ex+G5lN2BSHPDi4rwqRzw4BfOS\n+j4mAE8fRYav6iIcBY/j3wFJdmwEpOfjELlP8tw7jVfDceEOmCVAWPoyKRCd3dPdhPBSJwx\n+a9rNdQJSCUP0MAAAARcm9vdEA5MjhhYjMzM2JkNWEBAg==\n+-----END OPENSSH PRIVATE KEY-----\n",
+  "path": "templates/mobile/jobs/private",
+  "printDiff": "\u001b[93m-----BEGIN OPENSSH PRIVATE KEY-----\u001b[0m",
+  "reason": "SSH (OPENSSH) private key",
+  "stringsFound": [
+    "-----BEGIN OPENSSH PRIVATE KEY-----"
+  ]
+}
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

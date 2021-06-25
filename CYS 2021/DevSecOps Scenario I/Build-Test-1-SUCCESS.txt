@@ -1,0 +1,26 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Devskim - Scan
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://gitlab/root/opensource-job-portal.git # timeout=10
+Fetching upstream changes from http://gitlab/root/opensource-job-portal.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- http://gitlab/root/opensource-job-portal.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bd9fae8ba3d27635960a95f600f08db3a85fe1d8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bd9fae8ba3d27635960a95f600f08db3a85fe1d8 # timeout=10
+Commit message: "changed password thingy"
+ > git rev-list --no-walk ebe52c3d39bc9e247d3fa18b6e2999782967bf68 # timeout=10
+[Devskim - Scan] $ /bin/sh -xe /tmp/jenkins7709832272473403515.sh
++ /devskim.sh
+Issues found: 0 in 0 files
+Files analyzed: 213
+Files skipped: 553
+FLAG 1: 5bbd3d90fb303699b48e378715526c50
+Triggering a new build of Truffle Hog - Scan
+Finished: SUCCESS
