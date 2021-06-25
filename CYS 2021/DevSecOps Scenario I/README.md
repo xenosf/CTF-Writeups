@@ -137,7 +137,7 @@ Entering the above command opens up an editor with the following text:
  pick xxxxxxx deleted stuff
 ✂️--- SNIP ---✂️
 ```
-where `xxxxxxx` is the first few characters of the commit name.
+where `xxxxxxx` is the first few characters of the commit SHA.
 
 To squash these commits, change `pick` to `squash`.
 ```
