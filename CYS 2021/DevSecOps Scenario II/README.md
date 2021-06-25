@@ -47,6 +47,8 @@ I opened up VSCode and tried to use provided template code to automate entering 
 
 In the end, I didn't have any time left to try and get the code to work, so... I just ended up bruteforcing it manually... on the flag submission page. Afterwards, I went back to check, and the login works with username `admin`.
 
+![Screenshot 2021-06-23 at 18-10-25 Pages Wolf CMS](https://user-images.githubusercontent.com/40383042/123483331-1f355180-d639-11eb-85b6-b2cee89bf1ed.png)
+
 Would love to read a proper write-up on this!
 
 ### Flag:
