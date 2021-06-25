@@ -18,3 +18,21 @@ Many thanks to Cyber Youth Singapore and Pentester Academy for hosting this CTF!
 
 ## Flags
 * [AWS Security I](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/CYS%202021/AWS%20Security%20I/) (100pts)
+* More coming soon!
+
+<!--
+* [DevSecOps Scenario I]() (100pts)
+* DevSecOps Scenario II (200pts)
+* [DevSecOps Scenario III]() (300pts)
+* [Forensics I]() (100pts)
+* [Forensics II]() (200pts)
+* [Forensics III]() (300pts)
+* [Network Recon I]() (100pts)
+* [Network Recon II]() (200pts)
+* [Network Recon III]() (300pts)
+* [Web Application III]() (300pts)
+
+---
+
+Check out my teammate's write-ups here: [coming soon]
+-->
