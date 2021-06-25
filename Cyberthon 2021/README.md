@@ -16,10 +16,10 @@ Many thanks to CSIT and Alt-Tab Labs for training us and creating a fruitful exp
 ----
 
 ## Solved (during)
-* [Aaand It's Gone](Cyberthon%202021/Aaand%20It's%20Gone) (298pts)
-* [History Lesson](Cyberthon%202021/History%20Lesson) (653pts)
+* [Aaand It's Gone](Aaand%20It's%20Gone) (298pts)
+* [History Lesson](History%20Lesson) (653pts)
 
 ## Solved (after)
-* [Secret Briefing](Cyberthon%202021/Secret%20Briefing)
-* [Welp 1.0](Cyberthon%202021/Welp%201.0)
-* [Welp 2.0](Cyberthon%202021/Welp%202.0)
+* [Secret Briefing](Secret%20Briefing)
+* [Welp 1.0](Welp%201.0)
+* [Welp 2.0](Welp%202.0)
