@@ -12,7 +12,7 @@ This CTF was hosted as part of DSTA's Brainhack 2021 series of events, right aft
 
 The difficulty level was on the easier side - the pros on the Discord server were complaining about it being too easy and demanding a real challenge. As a noob I cannot relate to that, but I still found it surprisingly manageable.
 
-During the competition there were several technical difficulties, which mostly affected the senior category. Despite this, I still enjoyed the experience of trying to solve the flags.
+During the competition there were several technical difficulties, which mostly affected the senior category. Despite this, I still enjoyed the experience of trying to solve the flags and have possibly grown a single braincell.
 
 ---
 
