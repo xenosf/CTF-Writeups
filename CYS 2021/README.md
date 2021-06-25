@@ -2,7 +2,7 @@
 
 **Team:** "Thanks for carry" 
 
-**Results:** 2300 points | #12
+**Results:** 2300 points | #12/83
 
 ---
 
@@ -12,6 +12,9 @@ This CTF had a pretty interesting format - there was no point decay, the flags w
 
 It was certainly not as challenging as other CTFs, but as a noob I appreciate not having my brain turned to mush on the first flag :P I still learnt a lot and had a fun time.
 
+Many thanks to Cyber Youth Singapore and Pentester Academy for hosting this CTF!
+
 ---
 
 ## Flags
+* [AWS Security I](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/CYS%202021/AWS%20Security%20I/) (100pts)
