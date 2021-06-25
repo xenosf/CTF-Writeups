@@ -58,7 +58,7 @@ for k in range(0, 1000):
         break
 ```
 
-I went into more detail in [the earlier write-up](https://github.com/xeniafiorenza/CTF-Writeups/tree/main/Cyberthon%202021/Finals/Welp%201.0), and it's pretty much all the same stuff.
+I went into more detail in [the earlier write-up](../Welp%201.0), and it's pretty much all the same stuff.
 
 Running the script gives us the flag:
 
