@@ -22,7 +22,7 @@ In this lab, we have a partial DevSecOps pipeline for a Django web application. 
 
 Running the lab opens up a page with links to VS Code, Jenkins, and GitLab instances which are all running locally on the lab server.
 
-From the given resources, we can see that the code for this project is first pushed to the repository on GitLab, then automatically built and tested using Jenkins (with 2 build tests, DevSkim and TruffleHog).
+From the given resources, we can see that the code for this project is first pushed to the repository on GitLab, then built and tested using Jenkins (with 2 build tests, DevSkim and TruffleHog).
 
 We can access the Git repository using `http://gitlab/root/opensource-job-portal.git`.
 
