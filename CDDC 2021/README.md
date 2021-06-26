@@ -12,9 +12,11 @@ This CTF was hosted as part of DSTA's Brainhack 2021 series of events, right aft
 
 The difficulty level was on the easier side - the pros on the Discord server were complaining about it being too easy and demanding a real challenge. As a noob I cannot relate, but I still found this CTF surprisingly manageable.
 
-Despite the rather [messy](https://www.notion.so/CDDC21-Review-f239e9f81a32434f8e7af3053c9c74e8) experience, I still enjoyed the experience of trying to solve the flags and learnt some things while trying the challenges.
+Despite the rather messy^ experience, I still enjoyed the experience of trying to solve the flags and learnt some things while trying the challenges.
 
 Thank you to DSTA for organising this event! Hopefully the next CDDC will be better :)
+
+*^ [Here's](https://www.notion.so/CDDC21-Review-f239e9f81a32434f8e7af3053c9c74e8) a review about this CTF – not written by me (but I think it sums the whole situation up nicely)*
 
 ---
 
