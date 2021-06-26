@@ -1,0 +1,51 @@
+Started by upstream project "Bandit" build number 3
+originally caused by:
+ Started by upstream project "Truffle Hog - Scan" build number 7
+ originally caused by:
+  Started by upstream project "Devskim - Scan" build number 9
+  originally caused by:
+   Started by upstream project "Building the project" build number 9
+   originally caused by:
+    Started by GitLab push by Administrator
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Safety
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://gitlab/root/django-blog.git # timeout=10
+Fetching upstream changes from http://gitlab/root/django-blog.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- http://gitlab/root/django-blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e57aba6fe0481aafa477d4fcfa5ce6e4e184dfda (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e57aba6fe0481aafa477d4fcfa5ce6e4e184dfda # timeout=10
+Commit message: "updated pillow dependency"
+ > git rev-list --no-walk 8f9fa67652a446570dbb844820f6eb2296a62e3d # timeout=10
+[Safety] $ /bin/sh -xe /tmp/jenkins2793373912626157167.sh
++ /safety.sh
++==============================================================================+
+|                                                                              |
+|                               /$$$$$$            /$$                         |
+|                              /$$__  $$          | $$                         |
+|           /$$$$$$$  /$$$$$$ | $$  \__//$$$$$$  /$$$$$$   /$$   /$$           |
+|          /$$_____/ |____  $$| $$$$   /$$__  $$|_  $$_/  | $$  | $$           |
+|         |  $$$$$$   /$$$$$$$| $$_/  | $$$$$$$$  | $$    | $$  | $$           |
+|          \____  $$ /$$__  $$| $$    | $$_____/  | $$ /$$| $$  | $$           |
+|          /$$$$$$$/|  $$$$$$$| $$    |  $$$$$$$  |  $$$$/|  $$$$$$$           |
+|         |_______/  \_______/|__/     \_______/   \___/   \____  $$           |
+|                                                          /$$  | $$           |
+|                                                         |  $$$$$$/           |
+|  by pyup.io                                              \______/            |
+|                                                                              |
++==============================================================================+
+| REPORT                                                                       |
+| checked 5 packages, using local DB                                           |
++==============================================================================+
+| No known security vulnerabilities found.                                     |
++==============================================================================+
+FLAG 4: 46d5b8115e47963392f66c5b6941c2e0
+Triggering a new build of Django Application Installation
+Finished: SUCCESS

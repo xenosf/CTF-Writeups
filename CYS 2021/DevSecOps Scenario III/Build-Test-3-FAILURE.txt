@@ -1,0 +1,89 @@
+Started by upstream project "Truffle Hog - Scan" build number 5
+originally caused by:
+ Started by upstream project "Devskim - Scan" build number 7
+ originally caused by:
+  Started by upstream project "Building the project" build number 7
+  originally caused by:
+   Started by GitLab push by Administrator
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Bandit
+No credentials specified
+Cloning the remote Git repository
+Cloning repository http://gitlab/root/django-blog.git
+ > git init /var/lib/jenkins/workspace/Bandit # timeout=10
+Fetching upstream changes from http://gitlab/root/django-blog.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- http://gitlab/root/django-blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://gitlab/root/django-blog.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://gitlab/root/django-blog.git # timeout=10
+Fetching upstream changes from http://gitlab/root/django-blog.git
+ > git fetch --tags --force --progress -- http://gitlab/root/django-blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b337dca5678808f6d099b73507187da3c41af5c2 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b337dca5678808f6d099b73507187da3c41af5c2 # timeout=10
+Commit message: "ADD files"
+First time build. Skipping changelog.
+[Bandit] $ /bin/sh -xe /tmp/jenkins15514664569618937391.sh
++ bandit -f json -ii -ll . -r
++ echo true
+true
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
++ /bandit.sh
+
+
+                   _
+    /\            | |
+   /  \   _ __ ___| |__   ___ _ __ _   _
+  / /\ \ | '__/ __| '_ \ / _ \ '__| | | |
+ / ____ \| | | (__| | | |  __/ |  | |_| |
+/_/    \_\_|  \___|_| |_|\___|_|   \__, |
+                                    __/ |
+                                   |___/
+ Copyright (C) 2018 ArcherySec
+ Open Source Vulnerability Assessment and Management.
+
+
+{"message":"Scan Data Uploaded","project_id":"4c6d2b85-14c5-4708-8811-5ca691a34ea7","scan_id":"e0ebf5b6-42e4-472a-9625-08d120a823c6","scanner":"banditscan"}
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.8.2
+Run started:2021-06-22 10:08:42.553968
+
+Test results:
+>> Issue: [B605:start_process_with_a_shell] Starting a process with a shell, possible injection detected, security issue.
+   Severity: High   Confidence: High
+   Location: ./seeder.py:102
+   More Info: https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html
+101	    datestamp=""        
+102	    os.system(datestamp)
+103	    print()
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 682
+	Total lines skipped (#nosec): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0.0
+		Low: 5.0
+		Medium: 0.0
+		High: 1.0
+	Total issues (by confidence):
+		Undefined: 0.0
+		Low: 0.0
+		Medium: 2.0
+		High: 4.0
+Files skipped (0):
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

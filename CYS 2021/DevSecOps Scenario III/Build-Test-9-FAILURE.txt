@@ -1,0 +1,43 @@
+Started by upstream project "ArcherySec - Scan" build number 1
+originally caused by:
+ Started by upstream project "OWASP ZAP Testing" build number 1
+ originally caused by:
+  Started by upstream project "Django Application Installation" build number 1
+  originally caused by:
+   Started by upstream project "Safety" build number 2
+   originally caused by:
+    Started by upstream project "Bandit" build number 3
+    originally caused by:
+     Started by upstream project "Truffle Hog - Scan" build number 7
+     originally caused by:
+      Started by upstream project "Devskim - Scan" build number 9
+      originally caused by:
+       Started by upstream project "Building the project" build number 9
+       originally caused by:
+        Started by GitLab push by Administrator
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Inspec - Compliance
+[Inspec - Compliance] $ /bin/sh -xe /tmp/jenkins16818181110745954727.sh
++ chmod +x /inspec.sh
++ /inspec.sh
+
+Profile: tests from /django.rb (tests from .django.rb)
+Version: (not specified)
+Target:  ssh://tomcat@test-server:22
+
+[38;5;9m  ��  tomcat.directories: Check for existence and correct permissions of application directory (1 failed)[0m
+[38;5;41m     ���  Directory /home/tomcat/app/ is expected to be directory[0m
+[38;5;41m     ���  Directory /home/tomcat/app/ owner is expected to eq "tomcat"[0m
+[38;5;9m     ��  Directory /home/tomcat/app/ mode is expected to cmp == "0750"
+     
+     expected: 0750
+          got: 0755
+     
+     (compared using `cmp` matcher)
+[0m
+
+
+Profile Summary: 0 successful controls, [38;5;9m1 control failure[0m, 0 controls skipped
+Test Summary: [38;5;41m2 successful[0m, [38;5;9m1 failure[0m, 0 skipped
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

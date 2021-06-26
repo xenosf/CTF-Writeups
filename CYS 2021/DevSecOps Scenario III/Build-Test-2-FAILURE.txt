@@ -1,0 +1,72 @@
+Started by upstream project "Devskim - Scan" build number 4
+originally caused by:
+ Started by upstream project "Building the project" build number 4
+ originally caused by:
+  Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Truffle Hog - Scan
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://gitlab/root/django-blog.git # timeout=10
+Fetching upstream changes from http://gitlab/root/django-blog.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- http://gitlab/root/django-blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 65e26995956bf290e9b412f9eea000894d22fc35 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 65e26995956bf290e9b412f9eea000894d22fc35 # timeout=10
+Commit message: "init commit"
+ > git rev-list --no-walk 65e26995956bf290e9b412f9eea000894d22fc35 # timeout=10
+[Truffle Hog - Scan] $ /bin/sh -xe /tmp/jenkins851098456940431230.sh
++ /trufflehog.sh
+Cloning into 'django-blog'...
+{
+  "branch": "origin/master",
+  "commit": "init commit\n\ninitial commit for polls\n\nremoved creds\n",
+  "commitHash": "65e26995956bf290e9b412f9eea000894d22fc35",
+  "date": "2021-06-22 09:50:22",
+  "diff": "@@ -0,0 +1,3 @@\n+aws_access_key_id = 123456789012 \n+aws_secret_access_key = 'febcc175b9c0f1b6a831c399eadd2912697726617de' \n+aws_session_token = 'AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/LTo6UDdyJwOOvEVPvLXCrrrUtdnniCEXAMPLE/IvU1dYUg2RVAJBanLiHb4IgRmpRV3zrkuWJOgQs8IZZaIv2BXIa2R4Olgk'\n",
+  "path": ".aws/credentials.txt",
+  "printDiff": "@@ -0,0 +1,3 @@\n+aws_access_key_id = 123456789012 \n+aws_secret_access_key = '\u001b[93mfebcc175b9c0f1b6a831c399eadd2912697726617de\u001b[0m' \n+aws_session_token = '\u001b[93mAQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/LTo6UDdyJwOOvEVPvLXCrrrUtdnniCEXAMPLE/IvU1dYUg2RVAJBanLiHb4IgRmpRV3zrkuWJOgQs8IZZaIv2BXIa2R4Olgk\u001b[0m'\n",
+  "reason": "High Entropy",
+  "stringsFound": [
+    "febcc175b9c0f1b6a831c399eadd2912697726617de",
+    "AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/LTo6UDdyJwOOvEVPvLXCrrrUtdnniCEXAMPLE/IvU1dYUg2RVAJBanLiHb4IgRmpRV3zrkuWJOgQs8IZZaIv2BXIa2R4Olgk"
+  ]
+}
+{
+  "branch": "origin/master",
+  "commit": "init commit\n\ninitial commit for polls\n\nremoved creds\n",
+  "commitHash": "65e26995956bf290e9b412f9eea000894d22fc35",
+  "date": "2021-06-22 09:50:22",
+  "diff": "@@ -1,37 +0,0 @@\n-{% load static %}\n-<!DOCTYPE html>\n-<html lang=\"en\">\n-\n-<head>\n-    <meta charset=\"UTF-8\">\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n-    <title>Poll Me | Polls List</title>\n-    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\"\n-        crossorigin=\"anonymous\">\n-    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.6.3/css/all.css\" integrity=\"sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/\"\n-        crossorigin=\"anonymous\">\n-\n-    {% block custom_css %}{% endblock custom_css %}\n-\n-</head>\n-\n-<body>\n-    {% include 'includes/navbar.html' %}\n-\n-    {% block content %}\n-\n-    {% endblock content %}\n-\n-\n-    <!-- All javascript files goes under here    -->\n-    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\"\n-        crossorigin=\"anonymous\"></script>\n-    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\"\n-        crossorigin=\"anonymous\"></script>\n-    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\"\n-        crossorigin=\"anonymous\"></script>\n-\n-</body>\n-\n-</html>\n\\ No newline at end of file\n",
+  "path": "templates/base.html",
+  "printDiff": "@@ -1,37 +0,0 @@\n-{% load static %}\n-<!DOCTYPE html>\n-<html lang=\"en\">\n-\n-<head>\n-    <meta charset=\"UTF-8\">\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n-    <title>Poll Me | Polls List</title>\n-    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-\u001b[93mGn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\u001b[0m\"\n-        crossorigin=\"anonymous\">\n-    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.6.3/css/all.css\" integrity=\"sha384-\u001b[93mUHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/\u001b[0m\"\n-        crossorigin=\"anonymous\">\n-\n-    {% block custom_css %}{% endblock custom_css %}\n-\n-</head>\n-\n-<body>\n-    {% include 'includes/navbar.html' %}\n-\n-    {% block content %}\n-\n-    {% endblock content %}\n-\n-\n-    <!-- All javascript files goes under here    -->\n-    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-\u001b[93mKJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\u001b[0m\"\n-        crossorigin=\"anonymous\"></script>\n-    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-\u001b[93mApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\u001b[0m\"\n-        crossorigin=\"anonymous\"></script>\n-    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-\u001b[93mJZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\u001b[0m\"\n-        crossorigin=\"anonymous\"></script>\n-\n-</body>\n-\n-</html>\n\\ No newline at end of file\n",
+  "reason": "High Entropy",
+  "stringsFound": [
+    "Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
+    "UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/",
+    "KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN",
+    "ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q",
+    "JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  ]
+}
+{
+  "branch": "origin/master",
+  "commit": "ADD files\n",
+  "commitHash": "2c9e88534ef80eae1369c79a505daa03c0e82592",
+  "date": "2020-12-15 08:13:39",
+  "diff": "@@ -0,0 +1,3 @@\n+aws_access_key_id = 123456789012 \n+aws_secret_access_key = 'febcc175b9c0f1b6a831c399eadd2912697726617de' \n+aws_session_token = 'AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/LTo6UDdyJwOOvEVPvLXCrrrUtdnniCEXAMPLE/IvU1dYUg2RVAJBanLiHb4IgRmpRV3zrkuWJOgQs8IZZaIv2BXIa2R4Olgk'\n",
+  "path": ".aws/credentials.txt",
+  "printDiff": "@@ -0,0 +1,3 @@\n+aws_access_key_id = 123456789012 \n+aws_secret_access_key = '\u001b[93mfebcc175b9c0f1b6a831c399eadd2912697726617de\u001b[0m' \n+aws_session_token = '\u001b[93mAQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/LTo6UDdyJwOOvEVPvLXCrrrUtdnniCEXAMPLE/IvU1dYUg2RVAJBanLiHb4IgRmpRV3zrkuWJOgQs8IZZaIv2BXIa2R4Olgk\u001b[0m'\n",
+  "reason": "High Entropy",
+  "stringsFound": [
+    "febcc175b9c0f1b6a831c399eadd2912697726617de",
+    "AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/LTo6UDdyJwOOvEVPvLXCrrrUtdnniCEXAMPLE/IvU1dYUg2RVAJBanLiHb4IgRmpRV3zrkuWJOgQs8IZZaIv2BXIa2R4Olgk"
+  ]
+}
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

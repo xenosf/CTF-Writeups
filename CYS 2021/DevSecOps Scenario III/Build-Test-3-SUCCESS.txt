@@ -1,0 +1,51 @@
+Started by upstream project "Truffle Hog - Scan" build number 6
+originally caused by:
+ Started by upstream project "Devskim - Scan" build number 8
+ originally caused by:
+  Started by upstream project "Building the project" build number 8
+  originally caused by:
+   Started by GitLab push by Administrator
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Bandit
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://gitlab/root/django-blog.git # timeout=10
+Fetching upstream changes from http://gitlab/root/django-blog.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- http://gitlab/root/django-blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8f9fa67652a446570dbb844820f6eb2296a62e3d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8f9fa67652a446570dbb844820f6eb2296a62e3d # timeout=10
+Commit message: "removed system.os vln"
+ > git rev-list --no-walk b337dca5678808f6d099b73507187da3c41af5c2 # timeout=10
+[Bandit] $ /bin/sh -xe /tmp/jenkins3536438064475983714.sh
++ + echo true
+bandit -f jsontrue
+ -ii -ll . -r
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
++ /bandit.sh
+
+
+                   _
+    /\            | |
+   /  \   _ __ ___| |__   ___ _ __ _   _
+  / /\ \ | '__/ __| '_ \ / _ \ '__| | | |
+ / ____ \| | | (__| | | |  __/ |  | |_| |
+/_/    \_\_|  \___|_| |_|\___|_|   \__, |
+                                    __/ |
+                                   |___/
+ Copyright (C) 2018 ArcherySec
+ Open Source Vulnerability Assessment and Management.
+
+
+{"message":"Scan Data Uploaded","project_id":"4c6d2b85-14c5-4708-8811-5ca691a34ea7","scan_id":"3380eb5d-d3a8-4bd2-901e-2a198c818f02","scanner":"banditscan"}
+FLAG 3: f0ed5839d6addaf6eebc5fc5750ede1c
+Triggering a new build of Safety
+Finished: SUCCESS

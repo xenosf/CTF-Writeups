@@ -1,0 +1,28 @@
+Started by upstream project "Building the project" build number 4
+originally caused by:
+ Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Devskim - Scan
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://gitlab/root/django-blog.git # timeout=10
+Fetching upstream changes from http://gitlab/root/django-blog.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- http://gitlab/root/django-blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 65e26995956bf290e9b412f9eea000894d22fc35 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 65e26995956bf290e9b412f9eea000894d22fc35 # timeout=10
+Commit message: "init commit"
+ > git rev-list --no-walk 65e26995956bf290e9b412f9eea000894d22fc35 # timeout=10
+[Devskim - Scan] $ /bin/sh -xe /tmp/jenkins12862511298467905034.sh
++ /devskim.sh
+Issues found: 0 in 0 files
+Files analyzed: 29
+Files skipped: 138
+FLAG 1: 8aa6cc853503696b5740a462b57aebb6
+Triggering a new build of Truffle Hog - Scan
+Finished: SUCCESS

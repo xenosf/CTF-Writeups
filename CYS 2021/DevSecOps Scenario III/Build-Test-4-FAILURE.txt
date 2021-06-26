@@ -1,0 +1,64 @@
+Started by upstream project "Bandit" build number 2
+originally caused by:
+ Started by upstream project "Truffle Hog - Scan" build number 6
+ originally caused by:
+  Started by upstream project "Devskim - Scan" build number 8
+  originally caused by:
+   Started by upstream project "Building the project" build number 8
+   originally caused by:
+    Started by GitLab push by Administrator
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Safety
+No credentials specified
+Cloning the remote Git repository
+Cloning repository http://gitlab/root/django-blog.git
+ > git init /var/lib/jenkins/workspace/Safety # timeout=10
+Fetching upstream changes from http://gitlab/root/django-blog.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- http://gitlab/root/django-blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://gitlab/root/django-blog.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://gitlab/root/django-blog.git # timeout=10
+Fetching upstream changes from http://gitlab/root/django-blog.git
+ > git fetch --tags --force --progress -- http://gitlab/root/django-blog.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8f9fa67652a446570dbb844820f6eb2296a62e3d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8f9fa67652a446570dbb844820f6eb2296a62e3d # timeout=10
+Commit message: "removed system.os vln"
+First time build. Skipping changelog.
+[Safety] $ /bin/sh -xe /tmp/jenkins13354682711613193132.sh
++ /safety.sh
++==============================================================================+
+|                                                                              |
+|                               /$$$$$$            /$$                         |
+|                              /$$__  $$          | $$                         |
+|           /$$$$$$$  /$$$$$$ | $$  \__//$$$$$$  /$$$$$$   /$$   /$$           |
+|          /$$_____/ |____  $$| $$$$   /$$__  $$|_  $$_/  | $$  | $$           |
+|         |  $$$$$$   /$$$$$$$| $$_/  | $$$$$$$$  | $$    | $$  | $$           |
+|          \____  $$ /$$__  $$| $$    | $$_____/  | $$ /$$| $$  | $$           |
+|          /$$$$$$$/|  $$$$$$$| $$    |  $$$$$$$  |  $$$$/|  $$$$$$$           |
+|         |_______/  \_______/|__/     \_______/   \___/   \____  $$           |
+|                                                          /$$  | $$           |
+|                                                         |  $$$$$$/           |
+|  by pyup.io                                              \______/            |
+|                                                                              |
++==============================================================================+
+| REPORT                                                                       |
+| checked 5 packages, using local DB                                           |
++============================+===========+==========================+==========+
+| package                    | installed | affected                 | ID       |
++============================+===========+==========================+==========+
+| pillow                     | 6.0.0     | <6.2.2                   | 37782    |
+| pillow                     | 6.0.0     | <6.2.2                   | 37781    |
+| pillow                     | 6.0.0     | <6.2.2                   | 37780    |
+| pillow                     | 6.0.0     | <6.2.2                   | 37779    |
+| pillow                     | 6.0.0     | <6.2.3                   | 38449    |
+| pillow                     | 6.0.0     | <6.2.3                   | 38450    |
+| pillow                     | 6.0.0     | <7.0.0                   | 38451    |
+| pillow                     | 6.0.0     | <=7.0.0                  | 38452    |
++==============================================================================+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
