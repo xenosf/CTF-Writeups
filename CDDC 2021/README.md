@@ -2,7 +2,7 @@
 
 **Team:** Csemege 
 
-**Results:** 6990 points | #TBA
+**Results:** 6990 points | #13/70ish
 
 ---
 
