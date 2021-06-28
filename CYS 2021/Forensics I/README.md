@@ -120,7 +120,7 @@ d0:04:01:01:fd:ba
 ```
 
 ### 6. Find port number used for LiME TCP socket
-From the [earlier flag](#flag-3), we can see that the process ID for LiME was `14862`. We can investigate that process in more detail using the `linux_psaux` plugin, and see the port number in the arguments of the command used:
+From the [earlier flag](#3-find-current-working-directory-of-insmod), we can see that the process ID for LiME was `14862`. We can investigate that process in more detail using the `linux_psaux` plugin, and see the port number in the arguments of the command used:
 ```
 root@attackdefense:~# vol.py -f memory_dump.img linux_psaux -p 14862     
 Volatility Foundation Volatility Framework 2.6.1
