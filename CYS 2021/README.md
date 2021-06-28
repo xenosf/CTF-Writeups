@@ -22,10 +22,10 @@ Many thanks to Cyber Youth Singapore and Pentester Academy for hosting this CTF!
 * [DevSecOps Scenario II](DevSecOps%20Scenario%20II) (200pts)
 * [DevSecOps Scenario III](DevSecOps%20Scenario%20III) (300pts)
 * [Forensics I](Forensics%20I) (100pts)
+* [Forensics II](Forensics%20II) (200pts)
 * More coming soon!
 
 <!--
-* [Forensics II]() (200pts)
 * [Forensics III]() (300pts)
 * [Network Recon I]() (100pts)
 * [Network Recon II]() (200pts)
