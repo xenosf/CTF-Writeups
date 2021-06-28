@@ -83,6 +83,3 @@ that gives us the decoded flag! 🎉
 ```
 Cyberthon{w3lp_th15_15_4b50lut3ly_n0t_h0w_y0u_5h0uld_r5444}
 ```
-
-### Footnote
-*^Many thanks to @arul00 - [this write-up](https://github.com/arul00/CTF-Stuff/tree/main/Cyberthon%20Writeups/Finals/Welp%201.0) helped me a lot with regards to implementation, especially using `gmpy2`. The more you know 💫*
