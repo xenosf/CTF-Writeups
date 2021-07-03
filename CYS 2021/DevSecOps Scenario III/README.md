@@ -220,6 +220,7 @@ pillow=7.1.0
 In Jenkins, we can see now that the build has succeeded and this test succeeds:
 ```
 [Safety] $ /bin/sh -xe /tmp/jenkins2793373912626157167.sh
+✂️--- SNIP ---✂️
 + /safety.sh
 | REPORT                                                                       |
 | checked 5 packages, using local DB                                           |
