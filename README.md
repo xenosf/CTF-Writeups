@@ -4,6 +4,9 @@ I'm a noob at CTFs but figured I'd do some write-ups for fun and to document my 
 
 This repo contains write-ups and some personal thoughts on the CTFs in which I have participated.
 
+## GitHub Pages
+The web page for my write-ups is still in its early stages of construction! For now, please read them via the [GitHub repo](https://github.com/xeniafiorenza/CTF-Writeups/).
+
 ## CTFs
 * SMU Whitehacks 2021
 * [HCI Cyberthon 2021](Cyberthon%202021)
