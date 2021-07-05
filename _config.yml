@@ -32,7 +32,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: xeniafiorenza/jekyll-theme-purpletermx
+remote_theme: xeniafiorenza/jekyll-theme-purpletermx
 markdown: GFM
 plugins:
   - jekyll-feed
