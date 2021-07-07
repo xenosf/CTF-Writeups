@@ -4,8 +4,8 @@ I'm a noob at CTFs but figured I'd do some write-ups for fun and to document my 
 
 This repo contains write-ups and some personal thoughts on the CTFs in which I have participated.
 
-## GitHub Pages
-You can also read these write-ups on the [GitHub Pages site](https://blog.xeniafiorenza.me).
+## GitHub Repo
+You can also read these write-ups on the [GitHub Repo](https://github.com/xeniafiorenza/CTF-Writeups/).
 
 ## CTFs
 * SMU Whitehacks 2021
