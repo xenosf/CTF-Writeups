@@ -1,7 +1,8 @@
 # [Challenge Name]
-### Category: [Category]
 
----
+**Category**: [Category]
+
+----
 
 ## Challenge Description
 [Challenge Description]
@@ -13,7 +14,7 @@
 [given code]
 ```
 
----
+----
 ## Solution
 
 [solution]
