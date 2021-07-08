@@ -1,0 +1,48 @@
+name: Sync gh-pages with main
+
+on:
+  # Triggers the workflow on push or pull request events for main branch
+  push:
+    branches: [ main ]
+
+  workflow_dispatch: # Allows manual running of workflow
+
+jobs:
+  sync-pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out all history
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Sync files from main branch
+        run: |
+          git config --global user.name "GitHub"
+          git config --global user.email "noreply@github.com"
+          git checkout gh-pages
+          git checkout main . ':!README.md' ':!.gitignore' ':!.github/'
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v3.10.0
+        with:
+          token: ${{ secrets.PAT }}
+          base: gh-pages
+          
+      - name: Enable Pull Request Automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v1
+        with:
+          token: ${{ secrets.PAT }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash
+        
+      - name: Auto-approve Pull Request
+        uses: hmarr/auto-approve-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+
+
