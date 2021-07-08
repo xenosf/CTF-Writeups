@@ -22,9 +22,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       # Runs a set of commands using the runners shell
-      - name: Checkout and 
+      - name: Checkout files & commit
         run: |
           git checkout main ':!README.md' ':!.gitignore' .
           git commit -m 'Merged in new write-ups from main'
