@@ -6,7 +6,7 @@ name: Sync gh-pages with main
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ gh-pages ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,11 +23,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
-
+          ref: main
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3.10.0
+        with:
+          # The pull request base branch. Defaults to the branch checked out in the workflow.
+          base: gh-pages
+          
       # Runs a set of commands using the runners shell
-      - name: Checkout files & commit
+      - name: git add & commit files
         run: |
-          git checkout main ':!README.md' ':!.gitignore' .
-          git commit -m 'Merged in new write-ups from main'
-          git push
+          git add ':!README.md' ':!.gitignore' .
+          git commit -m "Added files from main branch"
+          
