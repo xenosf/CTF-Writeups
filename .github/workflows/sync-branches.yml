@@ -13,10 +13,12 @@ jobs:
 
     steps:
       # Check out all history
-      - uses: actions/checkout@v2
+      - name: Checkout all history
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
+      # Grabs all files from main except the specified exceptions
       - name: Sync files from main branch
         run: |
           git config --global user.name "GitHub"
@@ -24,25 +26,26 @@ jobs:
           git checkout gh-pages
           git checkout main . ':!README.md' ':!.gitignore' ':!.github/'
 
+      # Create PR
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3.10.0
         with:
           token: ${{ secrets.PAT }}
           base: gh-pages
-          
+      
+      # Enable automerge
       - name: Enable Pull Request Automerge
         if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: peter-evans/enable-pull-request-automerge@v1
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.PAT }} # Bot account PAT
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           merge-method: squash
-        
+      
+      # Approve (& merge)
       - name: Auto-approve Pull Request
         uses: hmarr/auto-approve-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-
-
