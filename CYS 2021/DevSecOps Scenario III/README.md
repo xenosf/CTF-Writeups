@@ -77,7 +77,6 @@ Finished: SUCCESS
 
 ### Build Test 2: TruffleHog 
 Now that we have fixed the first issue, we can take a look at the second stage's output:
-
 <!--{% raw %}-->
 ```
 [Truffle Hog - Scan] $ /bin/sh -xe /tmp/jenkins851098456940431230.sh
