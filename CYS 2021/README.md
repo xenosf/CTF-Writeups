@@ -25,11 +25,10 @@ Many thanks to Cyber Youth Singapore and Pentester Academy for hosting this CTF!
 * [Forensics II](Forensics%20II) (200pts)
 * [Forensics III](Forensics%20III) (300pts)
 * [Network Recon I](Network%20Recon%20I) (100pts)
+* [Network Recon II](Network%20Recon%20II) (200pts)
 * More coming soon!
 
 <!--
-* [Network Recon I]() (100pts)
-* [Network Recon II]() (200pts)
 * [Network Recon III]() (300pts)
 * [Web Application III]() (300pts)
 
