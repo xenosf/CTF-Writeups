@@ -29,9 +29,6 @@ Many thanks to Cyber Youth Singapore and Pentester Academy for hosting this CTF!
 * [Network Recon III](Network%20Recon%20III) (300pts)
 * [Web Application III](Web%20Application%20III) (300pts)
 
-<!--
-
 ---
 
-Check out my teammate's write-ups here: [coming soon]
--->
+Check out my teammate's write-ups here: [Link to @ThinkerPal's CYS 2021 write-ups](https://github.com/ThinkerPal/CTF-Writeups/tree/master/2021-01-CYSummit)
