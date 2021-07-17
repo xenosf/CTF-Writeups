@@ -131,7 +131,7 @@ key=maxUsers exp=-1 la=1624343259 cas=15 fetch=yes cls=1 size=77
 END
 ```
 
-I'm not sure why the key naming is so inconsistent (both camelCase and kebab-case?) but hey. We found the answer!
+I'm not sure why the key naming is so inconsistent (both camelCase and kebab-case?) but hey. We can now find the answer by comparing the output of `lru_crawler metadump` and `stats cachedump`. 
 
 #### Flag 3:
 ```
