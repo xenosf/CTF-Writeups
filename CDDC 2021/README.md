@@ -21,12 +21,12 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
 ---
 
 ## Flags
-<!--
-* [Break It Down](Break%20It%20Down) (Crypto)
+
+* Break It Down (Crypto)
   * [1 - Arch 6x64](Break%20It%20Down/1%20-%20Arch%206x64) (100pts)
   * [2 - No Rotations](Break%20It%20Down/2%20-%20No%20Rotations) (200pts)
   * [3 - Nice Encryption](Break%20It%20Down/3%20-%20Nice%20Encryption) (200pts)
--->
+
 * Going Active (Reconnaissance)
   * [2 - Easy Access](Going%20Active/2%20-%20Easy%20Access) (200pts)
 <!--
