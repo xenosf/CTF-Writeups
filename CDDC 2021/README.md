@@ -2,13 +2,13 @@
 
 **Team:** Csemege 
 
-**Results:** 6990 points | #13/70ish
+**Results:** 6990 points | #13/70ish (no full scoreboard released)
 
 ---
 
 ## Post-CTF Thoughts
 
-This CTF was hosted as part of DSTA's Brainhack 2021 series of events, right after Cyber Youth Singapore's [CYSummit CTF](/CYS%202021). It was a typical Jeopardy-style CTF but with no point decay.
+This CTF was hosted as part of DSTA's Brainhack 2021 series of events, right after Cyber Youth Singapore's [CYSummit CTF](/CYS%202021). It was a Jeopardy-style CTF, but strangely without point decay.
 
 The difficulty level was on the easier side - the pros on the Discord server were complaining about it being too easy and demanding a real challenge. As a noob I cannot relate, but I still found this CTF surprisingly manageable.
 
@@ -16,7 +16,7 @@ Despite the rather messy^ experience, I still enjoyed the experience of trying t
 
 Thank you to DSTA for organising this event! Hopefully the next CDDC will be better :)
 
-*^ [Here's](https://www.notion.so/CDDC21-Review-f239e9f81a32434f8e7af3053c9c74e8) a review about this CTF – not written by me (but I think it sums the whole situation up nicely)*
+*^ [Here's](https://www.notion.so/CDDC21-Review-f239e9f81a32434f8e7af3053c9c74e8) a review of this CTF – not written by me (but I think it sums the whole situation up nicely)*
 
 ---
 
