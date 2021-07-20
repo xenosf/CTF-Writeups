@@ -56,9 +56,7 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
 
 
 * More coming soon!
-
+-->
 ---
 
 Check out my teammate's write-ups here: [Link to @ThinkerPal's CDDC write-ups](https://github.com/ThinkerPal/CTF-Writeups/tree/master/2021-02-CDDC)
-
--->
