@@ -27,7 +27,7 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
   * [2 - No Rotations](Break%20It%20Down/2%20-%20No%20Rotations) (200pts)
   * [3 - Nice Encryption](Break%20It%20Down/3%20-%20Nice%20Encryption) (200pts)
 -->
-* [Going Active](Going%20Active) (Reconnaissance)
+* Going Active (Reconnaissance)
   * [2 - Easy Access](Going%20Active/2%20-%20Easy%20Access) (200pts)
 <!--
 * [Let's Go Hunting](Let's%20Go%20Hunting) (OSINT)
