@@ -21,34 +21,42 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
 ---
 
 ## Flags
-* Coming soon!
 <!--
-* [Break It Down]() (Crypto)
-  * [1 - Arch 6x64]() (100pts)
-  * [2 - No Rotations]() (200pts)
-  * [3 - Nice Encryption]() (200pts)
-* [Going Active]() (Reconnaissance)
-  * [2 - Easy Access]() (200pts)
-* [Let's Go Hunting]() (OSINT)
-  * [4 - Name System]() (200pts)
-  * [5 - Broken System]() (300pts)
-* [Linux Rules the World!]() (Linux)
-  * [1 - Lock and Key]() (100pts)
-  * [2 - License to Run]() (100pts)
-  * [3 - Historian]() (200pts)
-  * [4 - Line Inspection]() (200pts)
-  * [5 - Super]() (200pts)
-* [Post Mortem]() (Forensics)
-  * [3 - WPA]() (300pts)
-  * [4 - Default Password]() (400pts)
-* [Web Takedown Episode 1]() (Web Vulnerabilities)
-  * [4 - Traversal]() (300pts)
-  * [5 - Bypass]() (200pts)
-* [Web Takedown Episode 2]() (Web Vulnerabilities)
-  * [1 - Quick]() (200pts)
-  * [2 - Just a Session]() (200pts)
+* [Break It Down](Break%20It%20Down) (Crypto)
+  * [1 - Arch 6x64](Break%20It%20Down/1%20-%20Arch%206x64) (100pts)
+  * [2 - No Rotations](Break%20It%20Down/2%20-%20No%20Rotations) (200pts)
+  * [3 - Nice Encryption](Break%20It%20Down/3%20-%20Nice%20Encryption) (200pts)
+-->
+* [Going Active](Going%20Active) (Reconnaissance)
+  * [2 - Easy Access](Going%20Active/2%20-%20Easy%20Access) (200pts)
+<!--
+* [Let's Go Hunting](Let's%20Go%20Hunting) (OSINT)
+  * [4 - Name System](Let's%20Go%20Hunting/) (200pts)
+  * [5 - Broken System](Let's%20Go%20Hunting/) (300pts)
 
+* [Linux Rules the World!](Linux%20Rules%20the%20World!) (Linux)
+  * [1 - Lock and Key](Linux%20Rules%20the%20World!/) (100pts)
+  * [2 - License to Run](Linux%20Rules%20the%20World!/) (100pts)
+  * [3 - Historian](Linux%20Rules%20the%20World!/) (200pts)
+  * [4 - Line Inspection](Linux%20Rules%20the%20World!/) (200pts)
+  * [5 - Super](Linux%20Rules%20the%20World!/) (200pts)
+  <!-- add link to prev/next one-->
+<!--
+* [Post Mortem](Post%20Mortem) (Forensics)
+  * [3 - WPA](Post%20Mortem/) (300pts)
+  * [4 - Default Password](Post%20Mortem/) (400pts)
+
+* [Web Takedown Episode 1](Web%20Takedown%20Episode%201) (Web Vulnerabilities)
+  * [4 - Traversal](Web%20Takedown%20Episode%201/) (300pts)
+  * [5 - Bypass](Web%20Takedown%20Episode%201/) (200pts)
+
+* [Web Takedown Episode 2](Web%20Takedown%20Episode%202) (Web Vulnerabilities)
+  * [1 - Quick](Web%20Takedown%20Episode%202/) (200pts)
+  * [2 - Just a Session](Web%20Takedown%20Episode%202/) (200pts)
+
+
+* More coming soon!
+-->
 ---
 
-Check out my teammate's write-ups here: [coming soon]
--->
+Check out my teammate's write-ups here: [Link to @ThinkerPal's CDDC write-ups](https://github.com/ThinkerPal/CTF-Writeups/tree/master/2021-02-CDDC)
