@@ -29,11 +29,11 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
 
 * Going Active (Reconnaissance)
   * [2 - Easy Access](Going%20Active/2%20-%20Easy%20Access) (200pts)
-<!--
+
 * [Let's Go Hunting](Let's%20Go%20Hunting) (OSINT)
-  * [4 - Name System](Let's%20Go%20Hunting/) (200pts)
-  * [5 - Broken System](Let's%20Go%20Hunting/) (300pts)
--->
+  * [4 - Name System](Let's%20Go%20Hunting/4%20-%20Name%20System) (200pts)
+  * [5 - Broken System](Let's%20Go%20Hunting/5%20-%20Broken%20System) (300pts)
+
 * Linux Rules the World! (Linux)
   * [1 - Lock and Key](Linux%20Rules%20the%20World!/1%20-%20Lock%20and%20Key) (100pts)
   * [2 - License to Run](Linux%20Rules%20the%20World!/2%20-%20License%20to%20Run) (100pts)
@@ -43,19 +43,17 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
   * [6 - Path to Win (done by @ThinkerPal)](https://github.com/ThinkerPal/CTF-Writeups/tree/master/2021-02-CDDC/Linux%20Rules%20the%20World/6%20-%20Path%20to%20Win)
 <!--
 * [Post Mortem](Post%20Mortem) (Forensics)
-  * [3 - WPA](Post%20Mortem/) (300pts)
-  * [4 - Default Password](Post%20Mortem/) (400pts)
+  * [3 - WPA](Post%20Mortem/3%20-%20WPA) (300pts)
+  * [4 - Default Password](Post%20Mortem/4%20-%20Default%20Password) (400pts)
 
 * [Web Takedown Episode 1](Web%20Takedown%20Episode%201) (Web Vulnerabilities)
-  * [4 - Traversal](Web%20Takedown%20Episode%201/) (300pts)
-  * [5 - Bypass](Web%20Takedown%20Episode%201/) (200pts)
+  * [4 - Traversal](Web%20Takedown%20Episode%201/4%20-%20Traversal) (300pts)
+  * [5 - Bypass](Web%20Takedown%20Episode%201/5%20-%20Bypass) (200pts)
 
 * [Web Takedown Episode 2](Web%20Takedown%20Episode%202) (Web Vulnerabilities)
-  * [1 - Quick](Web%20Takedown%20Episode%202/) (200pts)
-  * [2 - Just a Session](Web%20Takedown%20Episode%202/) (200pts)
+  * [1 - Quick](Web%20Takedown%20Episode%202/1%20-%20Quick) (200pts)
+  * [2 - Just a Session](Web%20Takedown%20Episode%202/2%20-%20Just%20a%20Session) (200pts)
 
-
-* More coming soon!
 -->
 ---
 
