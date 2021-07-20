@@ -3,7 +3,7 @@
 ## Challenge Description
 One of TheKeepers has successfully obtained what seems to be one of the GDC private servers. He has sent me the image and another file, but unfortunately, I’m not great with Linux. I think you’re the one for this mission.
 
-Target: *X.X.X.X* (redacted)
+Target: *X.X.X.X* [redacted]
 
 ## Attached files
 * cybot01_bot1.key
@@ -48,7 +48,7 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.8.0-1035-aws x86_64)
 
 ✂️--- SNIP ---✂️
 
-Last login: Wed Jun 23 05:57:20 2021 from 42.60.249.219
+Last login: Wed Jun 23 05:57:20 2021 from Y.Y.Y.Y
 ```
 [Hacker voice] *We're in.*
 
