@@ -12,7 +12,7 @@ We managed to steal an encrypted message from the GDC. The problem is, it is enc
 When opened in a text editor, the file seemed like gibberish. Looks like XOR to me!
 
 To decode it, I used CyberChef to XOR brute force it:
-<!--screenshot-->
+![Screenshot 2021-06-24 at 11-05-35 XOR Brute Force - CyberChef](https://user-images.githubusercontent.com/40383042/126366143-b79ec5f2-13a4-4ed4-a620-dd9dbf4d7db5.png)
 
 Lo and behold... the flag.
 
