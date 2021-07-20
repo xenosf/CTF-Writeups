@@ -40,7 +40,7 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
   * [3 - Historian](Linux%20Rules%20the%20World!/3%20-%20Historian) (200pts)
   * [4 - Line Inspection](Linux%20Rules%20the%20World!/4%20-%20Line%20Inspection) (200pts)
   * [5 - Super](Linux%20Rules%20the%20World!/5%20-%20Super) (200pts)
-  <!-- add link to prev/next one-->
+  * [6 - Path to Win (done by @ThinkerPal)](https://github.com/ThinkerPal/CTF-Writeups/tree/master/2021-02-CDDC/Linux%20Rules%20the%20World/6%20-%20Path%20to%20Win)
 <!--
 * [Post Mortem](Post%20Mortem) (Forensics)
   * [3 - WPA](Post%20Mortem/) (300pts)
