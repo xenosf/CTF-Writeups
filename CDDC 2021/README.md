@@ -33,13 +33,13 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
 * [Let's Go Hunting](Let's%20Go%20Hunting) (OSINT)
   * [4 - Name System](Let's%20Go%20Hunting/) (200pts)
   * [5 - Broken System](Let's%20Go%20Hunting/) (300pts)
-
-* [Linux Rules the World!](Linux%20Rules%20the%20World!) (Linux)
-  * [1 - Lock and Key](Linux%20Rules%20the%20World!/) (100pts)
-  * [2 - License to Run](Linux%20Rules%20the%20World!/) (100pts)
-  * [3 - Historian](Linux%20Rules%20the%20World!/) (200pts)
-  * [4 - Line Inspection](Linux%20Rules%20the%20World!/) (200pts)
-  * [5 - Super](Linux%20Rules%20the%20World!/) (200pts)
+-->
+* Linux Rules the World! (Linux)
+  * [1 - Lock and Key](Linux%20Rules%20the%20World!/1%20-%20Lock%20and%20Key) (100pts)
+  * [2 - License to Run](Linux%20Rules%20the%20World!/2%20-%20License%20to%20Run) (100pts)
+  * [3 - Historian](Linux%20Rules%20the%20World!/3%20-%20Historian) (200pts)
+  * [4 - Line Inspection](Linux%20Rules%20the%20World!/4%20-%20Line%20Inspection) (200pts)
+  * [5 - Super](Linux%20Rules%20the%20World!/5%20-%20Super) (200pts)
   <!-- add link to prev/next one-->
 <!--
 * [Post Mortem](Post%20Mortem) (Forensics)
