@@ -1,5 +1,6 @@
 # Welp 2.0
-### Category: Crypto
+**Category:** Crypto
+
 ---
 ## Challenge Description
 APOCALYPSE heard us dissing on their RSA encryption script and decided to update it. But the moment we saw their updated implementation, we all collectively went welp once again. Let's see if you can manage to decrypt a flag that has been encrypted with their updated script.
