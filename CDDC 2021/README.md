@@ -48,9 +48,8 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
 
 * Web Takedown Episode 1 (Web Vulnerabilities)
   * [4 - Traversal](Web%20Takedown%20Episode%201/4%20-%20Traversal) (300pts)
-  <!--
-  * [5 - Bypass](Web%20Takedown%20Episode%201/5%20-%20Bypass) (200pts)
--->
+  * [5 - Bypass](Web%20Takedown%20Episode%201/) (200pts)
+
 * Web Takedown Episode 2 (Web Vulnerabilities)
   * [1 - Quick](Web%20Takedown%20Episode%202/1%20-%20Quick) (200pts)
   * [2 - Just a Session](Web%20Takedown%20Episode%202/2%20-%20Just%20a%20Session) (200pts)
