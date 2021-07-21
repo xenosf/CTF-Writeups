@@ -10,10 +10,12 @@ The resistance has successfully intercepted encrypted WiFi traffic from a Cyber-
 
 ## Solution
 First, we can open the file in Wireguard. As expected, since it is encrypted, we cannot make sense of the data:
-<!--screenshot-->
 
-To decrypt the trafic, we must first make sure that the data contains the 4-way handshake, which is needed for us to crack the key:
-<!--screenshot-->
+<img width="1332" alt="Screenshot 2021-06-24 at 15 12 01" src="https://user-images.githubusercontent.com/40383042/126428896-5f009ab7-a503-46f2-901d-08d66da708c8.png">
+
+To decrypt the traffic, we must first make sure that the data contains the 4-way handshake, which is needed for us to crack the key:
+
+<img width="1332" alt="Screenshot 2021-06-24 at 11 10 5111117" src="https://user-images.githubusercontent.com/40383042/126428922-dbd105d8-cb8b-4579-bbed-cb0c3d742485.png">
 
 We can then crack the key using `aircrack-ng`:
 ```
@@ -60,19 +62,24 @@ Read 892 packets.
 In this case, I used the `rockyou` wordlist, provided with Kali.
 
 Aircrack managed to get the key fairly easily – let's go back to Wireshark to decrypt the capture. First, let us enter the key into Wireshark, by going to `Settings > Protocols > IEEE 802.11`:
-<!--screenshot-->
+
+<img width="858" alt="Screenshot 2021-07-21 at 10 15 08" src="https://user-images.githubusercontent.com/40383042/126428957-5d23b966-c817-474e-914e-d646f3fe8a7b.png">
 
 For WPA, we enter `key:SSID` – the key was cracked earlier, and the SSID can be found earlier:
-<!--screenshot-->
+
+<img width="688" alt="Screenshot 2021-06-24 at 11 10 5sdfdf111117" src="https://user-images.githubusercontent.com/40383042/126428968-30517ed1-a647-423b-95b5-38b8fe6669e9.png">
+
+> **Note:** IP addresses redacted.
 
 Then, we can look at the decrypted traffic. Upon inspecting it, we can find some HTTP traffic.
-<!--screenshot-->
 
-We can then follow the HTTP stream.
-<!--screenshot-->
+<img width="1332" alt="Screenshot 2021-06-24 at 15 16 40" src="https://user-images.githubusercontent.com/40383042/126428980-7e499f34-e985-482c-96a1-b85e12d1b74e.png">
 
-This looks like where we should be looking, but the flag itself isn't here. We can try visiting the source of the traffic ourselves (IP redacted):
-<!--screenshot-->
+<img width="1088" alt="Screenshot 2021-06-24 at 15 17 32" src="https://user-images.githubusercontent.com/40383042/126429073-82d96a84-5f56-48fe-ac4c-cf728a51047c.png">
+
+This looks like where we should be looking, but the flag itself isn't here. We can try visiting the source of the traffic ourselves:
+
+<img width="534" alt="Screenshot 2021-06-24 at 15 18 35" src="https://user-images.githubusercontent.com/40383042/126429049-8fca8ea8-2053-4da2-ba74-630f416cb82d.png">
 
 ### Flag:
 ```
