@@ -1,5 +1,6 @@
 # Aaand It's Gone
-### Category: Reverse Engineering
+**Category:** Reverse Engineering
+
 ---
 ## Challenge Description
 Seems like APOCALYPSE has been up to no good again. They've been running a certain program to corrupt a random portion of everyone's files and causing chaos all around. Could you please help to reverse engineer their code and see if it's possible to recover the flag?

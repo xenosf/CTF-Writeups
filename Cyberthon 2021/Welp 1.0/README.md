@@ -1,5 +1,6 @@
 # Welp 1.0
-### Category: Crypto
+**Category:** Crypto
+
 ---
 ## Challenge Description
 APOCALYPSE has recently started to encrypt all their files with RSA. But the moment we saw their implementation, all we can say is welp. Let's see if you can manage to decrypt a flag that has been encrypted with their script.

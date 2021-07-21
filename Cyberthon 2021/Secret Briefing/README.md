@@ -1,5 +1,6 @@
 # Secret Briefing
-### Category: Forensics
+**Category:** Forensics
+
 ---
 ## Challenge Description
 Since APOCALYPSE recently deployed a mole to infiltrate our investigation team, we've decided to return the favor and deployed one of our members to attend their "super secrect briefing" to gather some intel on their latest schemes. Unfortunately, it seems that our mole got compromised. But on the bright side, he managed to send us a copy of the meeting slides before he got compromised. However, the most critical slide in the powerpoint seems to be missing. It would be a big help to us if you could recover the contents of that slide!
