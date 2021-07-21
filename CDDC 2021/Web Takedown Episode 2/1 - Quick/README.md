@@ -3,7 +3,7 @@
 ## Challenge Description
 One of the Keepers founded an interesting website used by the GDC as a command and control (C2) system. I tried to use it, but I think I just too slow…
 
-Target URL: http://X.X.X.X/UMJVHRV5 [IP redacted]
+Target URL: `http://X.X.X.X/UMJVHRV5` [IP redacted]
 
 ---
 
