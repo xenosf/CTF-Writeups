@@ -3,7 +3,7 @@
 ## Challenge Description
 It looks suspicious, nothing on the main page, but I’m sure that there is something you can manipulate to get further access.
 
-Target URL: http://X.X.X.X/NMJX72GV [IP redacted]
+Target URL: `http://X.X.X.X/NMJX72GV` [IP redacted]
 
 ---
 
