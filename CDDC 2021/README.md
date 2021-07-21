@@ -41,9 +41,10 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
   * [4 - Line Inspection](Linux%20Rules%20the%20World!/4%20-%20Line%20Inspection) (200pts)
   * [5 - Super](Linux%20Rules%20the%20World!/5%20-%20Super) (200pts)
   * [6 - Path to Win (done by @ThinkerPal)](https://github.com/ThinkerPal/CTF-Writeups/tree/master/2021-02-CDDC/Linux%20Rules%20the%20World/6%20-%20Path%20to%20Win)
-<!--
+
 * Post Mortem (Forensics)
   * [3 - WPA](Post%20Mortem/3%20-%20WPA) (300pts)
+<!--
   * [4 - Default Password](Post%20Mortem/4%20-%20Default%20Password) (400pts)
 
 * Web Takedown Episode 1 (Web Vulnerabilities)
