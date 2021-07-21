@@ -10,11 +10,11 @@ Target URL: http://X.X.X.X/D6IS1E8 [IP redacted]
 ## Solution
 Visiting the provided URL takes us to this login page:
 
-<!--screenshot-->
+![Screenshot 2021-06-25 at 03-40-19 GDC SRV-01](https://user-images.githubusercontent.com/40383042/126445164-13e328f6-e238-4414-86d9-c4a4ecffc3d1.png)
 
 We don't have any credentials to log in with, and entering in some random text gives us this message:
 
-<!--screenshot-->
+![Screenshot 2021-06-25 at 03-23-37 GDC SRV-01](https://user-images.githubusercontent.com/40383042/126445184-8bfb1f6f-2da3-4f7a-b649-4b4dfad29ecd.png)
 
 "No rows" eh? That tells us it's reading from a table, so let's try to SQL inject this login.
 
@@ -40,7 +40,7 @@ Here, not closing the quote in `'a'=a` means we don't need to comment out the en
 
 I tried injecting this into the username field, but it did not work. However, injecting this into the password field gives us a different result:
 
-<!--screenshot-->
+![Screenshot 2021-06-25 at 03-23-51 GDC SRV-01](https://user-images.githubusercontent.com/40383042/126445205-d3fd5674-ec0b-40dd-bc32-ab207befdf4e.png)
 
 Too many matches. So, we have to limit the number of matches it returns, by using `LIMIT` in our query. However, this means that we now have to comment out the end of the query.
 
@@ -54,7 +54,7 @@ This did not return anything. Perhaps they filtered out `--`? Next, I tried `#`:
 e' OR 'a'='a' LIMIT 1 #
 ```
 
-<!--screenshot-->
+![Screenshot 2021-06-25 at 03-41-50 GDC SRV-01](https://user-images.githubusercontent.com/40383042/126445223-14ec7cf3-8a16-4898-a7fb-4cbe1f4cef2a.png)
 
 This gives us a result. However, it's not the correct row.
 
@@ -66,13 +66,10 @@ e' OR 'a'='a' LIMIT 2,1 #
 ```
 
 This returned *another* John.
-```
-[[3,"john","cDR21afzss8"]]
-```
 
 Trying more rows, we finally get our flag:
 
-<!--screenshot-->
+![Screenshot 2021-06-25 at 03-19-00 GDC SRV-01](https://user-images.githubusercontent.com/40383042/126445247-422ffee2-2d76-4502-98e5-7b3834525b75.png)
 
 ### Flag:
 ```
