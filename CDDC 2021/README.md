@@ -44,9 +44,8 @@ Thank you to DSTA for organising this event! Hopefully the next CDDC will be bet
 
 * Post Mortem (Forensics)
   * [3 - WPA](Post%20Mortem/3%20-%20WPA) (300pts)
-<!--
   * [4 - Default Password](Post%20Mortem/4%20-%20Default%20Password) (400pts)
-
+<!--
 * Web Takedown Episode 1 (Web Vulnerabilities)
   * [4 - Traversal](Web%20Takedown%20Episode%201/4%20-%20Traversal) (300pts)
   * [5 - Bypass](Web%20Takedown%20Episode%201/5%20-%20Bypass) (200pts)
