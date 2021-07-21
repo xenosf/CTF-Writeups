@@ -3,7 +3,7 @@
 ## Challenge Description
 Finally, we have found an interesting web server used by the GDC, but I don’t have credentials so I can’t bypass the login page. I heard that you are the master of injections.
 
-Target URL: http://X.X.X.X/D6IS1E8 [IP redacted]
+Target URL: `http://X.X.X.X/D6IS1E8` [IP redacted]
 
 ---
 

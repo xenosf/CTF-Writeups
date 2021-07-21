@@ -3,7 +3,7 @@
 ## Challenge Description
 I know that this server is vulnerable, but I can’t exploit it. Show your skills and find the right file.
 
-Target URL: http://X.X.X.X/4HOF3DTV [IP redacted]
+Target URL: `http://X.X.X.X/4HOF3DTV` [IP redacted]
 
 ---
 

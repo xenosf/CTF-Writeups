@@ -65,4 +65,4 @@ CDDC21{b0t_eNtR3nC3}
 CDDC21{b0t_eNtR3nC3}
 ```
 
-[Part 2](../2%20-%20License%20to%20Run)
+[Part 2 >](../2%20-%20License%20to%20Run)
