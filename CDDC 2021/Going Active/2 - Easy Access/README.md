@@ -1,4 +1,4 @@
-# Going Active 2
+# Easy Access
 
 ## Challenge Description
 I have another mission for you. Check this IP address and see if they left anything useful you can put your hands on.

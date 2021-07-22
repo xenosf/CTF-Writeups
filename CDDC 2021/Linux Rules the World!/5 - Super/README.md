@@ -15,7 +15,7 @@ Password:
 bot5@cybot01:/home/bot4$ cd ~
 ```
 
-In the home directory, there is `flag.txt`. However, `bot5` does not have access to read the file; only `bot6` is allowed to:
+In the home directory, there is `flag.txt`. However, it is owned by `bot6`, and only `bot6` is allowed to read the file:
 
 ```
 bot5@cybot01:~$ ls -la
@@ -28,8 +28,6 @@ lrwxrwxrwx  1 root root    9 Jun 18 09:51 .bash_history -> /dev/null
 -rwxrwxrwx  1 root bot5   24 Jun 24 08:37 .profile
 -r--------  1 bot6 root   22 Jun 18 09:51 flag.txt
 ```
-
-As can be seen from the above, `flag.txt` is owned by `bot6`, and only `bot6` is allowed to read the file.
 
 Dang, this bot is almost as useless as I am. Luckily, we can use `sudo` to run things as other users.
 ```
