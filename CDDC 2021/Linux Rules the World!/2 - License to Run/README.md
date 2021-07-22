@@ -28,7 +28,23 @@ bot2@cybot01:~$ ls -a
 
 Aha! A hidden file.
 
-At this point, I could have done `ls -la` to list all the files *and* their permissions – it slipped my mind to check those during the CTF, and I jumped straight to executing the flag file. (I'm guessing it would have only execute permissions and no read/write perms for `bot2`.)
+At this point, I could have done `ls -la` to list all the files *and* their permissions – it slipped my mind to check those during the CTF, and I jumped straight to executing the flag file. ~~(I'm guessing it would have only execute permissions and no read/write perms for `bot2`.)~~
+
+Update: **Nevermind**, it actually had read/write/execute permissions for everyone 🤦‍♂️ good job.
+
+```
+bot2@cybot01:~$ ls -la
+total 40
+dr-xr-x---  2 root bot2  4096 Jun 18 09:51  .
+-rwxrwxrwx  1 bot2 root 16752 Jun 18 09:51 '.#flag$!!1'
+drwxr-xr-x 10 root bot5  4096 Jun 18 09:51  ..
+lrwxrwxrwx  1 root root     9 Jun 18 09:51  .bash_history -> /dev/null
+-r--r-----  1 bot2 bot2   220 Feb 25  2020  .bash_logout
+-r--r-----  1 bot2 bot2  3771 Feb 25  2020  .bashrc
+-r--r-----  1 bot2 bot2   807 Feb 25  2020  .profile
+```
+
+Anyways, upon executing the file, we get the flag.
 
 ```
 bot2@cybot01:~$ ./'.#flag$!!1' 
