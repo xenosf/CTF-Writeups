@@ -1,26 +1,28 @@
-# [Challenge Name]
+# Challenge Name
 
-**Category**: [Category]
+**Category**: Category
+
+X points | Y solves
 
 ----
 
 ## Challenge Description
-[Challenge Description]
+Challenge Description
+
 ## Attached files/Instructions
-* [file1]
-* [givencode.py]
+* file1
+* givencode.py
 ### givencode.py
 ```
-[given code]
+given code
 ```
 
 ----
+
 ## Solution
-
-[solution]
-
+solution
 
 ### Flag:
 ```
-[flag]
+flag
 ```
