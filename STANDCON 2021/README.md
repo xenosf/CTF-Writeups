@@ -13,7 +13,10 @@ This was a very welcome return to normalcy after the unconventional ~~trainwreck
 The 0000h start time was disastrous for my sleep schedule, and my team's plans to meet up in real life were foiled by the rise in local Covid cases, but that didn't end up stopping me from having a very fulfilling and fun time.
 
 Some fun highlights from the CTF:
-<!--screenshots-->
+
+<img src="https://user-images.githubusercontent.com/40383042/126878676-11b04d2d-98c2-4018-8bb7-23274845f94e.png" width="550" />
+<img src="https://user-images.githubusercontent.com/40383042/126878679-b7384e11-25a3-4707-9cdd-47e97a6471cc.png" width="400" />
+
 
 This CTF had very few forensics flags (I miss vol.py) – and no OSINT flags at all – but this forced me to look at other categories and learn more. Hooray?
 
@@ -41,7 +44,10 @@ COMING SOON!
 * [Transmission]()
 -->
 
+<!---
 
 ----
 
 Check out my teammate's write-ups here: [@ThinkerPal's STANDCON 2021 write-ups]()
+
+--->
