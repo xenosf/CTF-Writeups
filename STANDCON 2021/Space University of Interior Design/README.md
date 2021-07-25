@@ -18,7 +18,7 @@ The flag is in the flag format: STC{...}
 ----
 ## Solution
 
-<!--funni screenshot-->
+![zeyu2001 on discord: "at least it's not cddc linux challenge"](https://user-images.githubusercontent.com/40383042/126910568-8fa4a994-65f4-42c1-9578-48de36160a02.png)
 
 > Many thanks to my teammates [@Portatolova](https://github.com/Portatolova) and [@ThinkerPal](https://github.com/ThinkerPal) for helping solve this! Big brain time.
 
