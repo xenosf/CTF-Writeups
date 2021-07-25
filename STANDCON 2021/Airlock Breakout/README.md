@@ -18,17 +18,20 @@ The flag is in the flag format: STC{...}
 ----
 
 ## Solution
+
+> Many thanks to my teammate @ThinkerPal for working on this challenge with me :)
+
 Upon visiting the website, we are greeted with a page with only a password input textbox and a submit button.
 
-<!--screenshot-->
+<img width="264" alt="Screenshot 2021-07-25 at 20 28 12" src="https://user-images.githubusercontent.com/40383042/126898931-de4daf15-3e54-416c-853e-1749ad9a8b9c.png">
 
-We can use the inspect element tool to investigate, and find out that pressing the button calls the     `unlock` function, with the contents of the textbox as the arguments. We can also see that the function is located in a file called `flag.js`.
+We can use the inspect element tool to investigate, and find out that pressing the button calls the `unlock` function, with the contents of the textbox as the arguments. We can also see that the function is located in a file called `flag.js`.
 
-<!--screenshot-->
+<img width="541" alt="Screenshot 2021-07-25 at 16 25 03" src="https://user-images.githubusercontent.com/40383042/126898937-4f09b744-5d4f-400b-9406-cbde178ea1ad.png">
 
-To look at `flag.js`, we can go to the Network tab of the inspect element panel.
+To look at `flag.js`, we can go to the Network tab of the inspect element panel and open it from there.
 
-<!--screenshot-->
+<img width="542" alt="Screenshot 2021-07-25 at 16 24 34" src="https://user-images.githubusercontent.com/40383042/126899021-15219f62-cf8a-4bd2-9d1a-b4b7850ec227.png">
 
 Let's look at the aforementioned `unlock` function:
 ```js
@@ -77,7 +80,7 @@ Here's what we can deduce from the above:
 
 This one's pretty simple. To get the text, we can get the characters from the character codes given.
 
-<!--screenshot-->
+<img width="424" alt="Screenshot 2021-07-24 at 05 14 17" src="https://user-images.githubusercontent.com/40383042/126899032-e66896d7-9268-4adf-9026-fc35f38ce902.png">
 
 Password so far:
 ```
@@ -120,9 +123,9 @@ This one's a bit more difficult. From the above function, we can see that:
 * The length of this segment is 4.
 * It's checking for whether the character codes fulfil a set of simultaneous equations:
 
-  <!--image-->
+  ![airlock_simeqn](https://user-images.githubusercontent.com/40383042/126899037-bd6da172-6fff-46d6-a53c-1f782da672cd.png)
 
-  (Where A, B, C, D are the 1st, 2nd, 3rd, and 4th characters respectively.)
+  (Where A, B, C, D are the codes for the 1st, 2nd, 3rd, and 4th characters respectively.)
 
 Solving the system of equations, we get A=55, B=72, C=51, and D=7. We can then convert these character codes to characters to get the next part of the password:
 
@@ -190,14 +193,14 @@ What we have so far is:
 3J3C7_7H3M_0xx_xx_7xx_xxxxxx...
 ```
 
-The next few parts are more mathematics. For simplicity, I'll be identifying each character's character code using a placeholder letter:
+The next few parts are more mathematics. To keep it short, I'll be identifying each character's character code using a placeholder letter:
 ```
 3J3C7_7H3M_0ab_cd_7ef_ghijkl...
 ```
 
 The character codes of "0" is 48,  and "7" is 55. Using this information, we can then form more equations. (For simplicity, I didn't show all of them here – only the ones that immediately gave us more characters)
 
-<!--image-->
+![png latex-4](https://user-images.githubusercontent.com/40383042/126899042-0eaed986-bac0-4ab5-bdba-9a583a9fa9a5.png)
 
 Converting the character codes back to characters, we can fill in a few more letters in the password:
 ```
@@ -209,13 +212,11 @@ This, along with the question context and list of possible characters, was enoug
 3J3C7_7H3M_0U7_0F_7H3_41RL0CK
 ```
 
-To find the remaining characters of the password in a less guessy way, we could do a bruteforce, using the list of accepted characters, and checking using the rest of the `if` statement.
+(To find the remaining characters of the password in a less guessy way, we could do a bruteforce, using the list of accepted characters, and checking using the rest of the `if` statement.)
 
-Sure enough, when I entered in that password, the 3 airlocks opened and triggered an alert with the flag.
+Sure enough, when I entered in the password, the 3 airlocks opened and triggered an alert with the flag.
 
-<!--screenshot-->
-
-
+<img width="1391" alt="Screenshot 2021-07-24 at 06 18 27" src="https://user-images.githubusercontent.com/40383042/126899044-c301dc4f-c71b-42bd-9a17-e14d6614fbbc.png">
 
 ### Flag:
 ```
