@@ -28,7 +28,7 @@ HUJFZE: KODOWZIOG
 
 ----
 ## Solution
-Originally, I tried to decode it, using multiple tools and trying manually, to no avail. Then, I bought the hint and facepalmed at my own oversight.
+From the challenge name, we can tell that it's probably a substitution cipher. Originally, I tried to decode it, using multiple tools and trying manually, to no avail. Then, I bought the hint and facepalmed at my own oversight.
 
 I found a web tool, [quipqiup](https://www.quipqiup.com/), that could decode substitution ciphers in multiple languages. I put that in, and got the answer.
 
