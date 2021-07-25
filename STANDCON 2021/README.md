@@ -29,8 +29,8 @@ Many thanks to n0h4ts for organising STANDCON, and even greater thanks to my tea
 
 * [Airlock Breakout](Airlock%20Breakout) (100pts)
 * [Ancient Computing](Ancient%20Computing) (100pts)
-<!--
 * [Astronaut Document](Astronaut%20Document) (230pts)
+<!--
 * [Substitution Extreme](Substitution%20Extreme) (728pts)
 * [Space University of Interior Design](Space%20University%20of%20Interior%20Design) (728pts)
 -->
