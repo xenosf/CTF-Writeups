@@ -26,7 +26,7 @@ Dang, that's old. So old, in fact, that Microsoft Excel stopped supporting them 
 
 This website also says that these files can be opened using OpenOffice. After installing it, indeed, I could open it, and read cell D9.
 
-<!--screenshot-->
+<img width="1238" alt="Screenshot 2021-07-24 at 00 21 31" src="https://user-images.githubusercontent.com/40383042/126899380-f5c8b2fa-bc61-495f-a5fb-07e46b088d3f.png">
 
 ### Flag:
 ```
