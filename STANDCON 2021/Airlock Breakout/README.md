@@ -207,7 +207,7 @@ Converting the character codes back to characters, we can fill in a few more let
 3J3C7_7H3M_0ab_0d_7e3_4hijkl...
 ```
 
-This, along with the question context and list of possible characters, was enough for me to guess the rest of the sentence, "eject them out of the airlock":
+This, along with the question context and list of possible characters, was enough for me to guess the rest of the sentence, "eject them out of the airlock" (ඞ SUS):
 ```
 3J3C7_7H3M_0U7_0F_7H3_41RL0CK
 ```
