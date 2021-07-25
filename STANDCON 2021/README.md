@@ -2,7 +2,7 @@
 
 **Team:** CRIX
 
-**Results:** TBC points | #TBC/TBC
+**Results:** 5693 points | #15/65
 
 ----
 
@@ -39,7 +39,7 @@ COMING SOON!
 
 <!--
 ## Solves (after)
-* [Specimens]()
+* [Specimens] ()
 * [Mend the Lift to Space]()
 * [Transmission]()
 -->
