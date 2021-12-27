@@ -13,3 +13,4 @@ You can also read these on my website: https://blog.xeniafiorenza.me.
 * [CYS Cyber Youth Summit 2021](CYS%202021)
 * [DSTA Cyber Defenders Discovery Camp 2021 (Junior Category)](CDDC%202021)
 * [n0h4ts STANDCON 2021](STANDCON%202021)
+* [HCI IRS Sieberrsec CTF 3.0 (2021)](Sieberrsec%202021)
