@@ -38,7 +38,7 @@ Many thanks to HCI IRS for organising this CTF!
 
 -->
 **Forensics**
-* [Birds?](Forensics/Birds%3F) (114pts)
+* [Birds?](Forensics/Birds) (114pts)
 * [Duck Delivery](Forensics/Duck%20Delivery) (77pts)
 <!--
 * [Digging In The Dump Pt. I](Forensics/Digging%20In%20The%20Dump%20Pt.%20I) (266pts)
