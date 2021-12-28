@@ -41,7 +41,7 @@ C = Postal code of the building right beside the bus stop he was at in the third
 
 ## Solution
 
-We know that the locations are generally in the same region, so we can solve the easier ones first and work from there. (We solved this challenge in the order 2 -> 3 -> 1.)
+We know that the locations are generally in the same region, so we can solve the easier ones first and work from there. (We solved this challenge in the order [2](#2jpeg-1) -> [3](#3jpeg-1) -> [1](#1jpeg-1).)
 
 ### 2.jpeg
 
