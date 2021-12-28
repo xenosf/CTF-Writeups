@@ -17,7 +17,8 @@ I ordered duck for dinner but all I got was an empty box! Can you help me find w
 ## Solution
 The provided jpg initially just looks like a photo of an empty KFC bucket, but it's suspiciously large in file size for how low resolution it is.
 
-[screenshot]
+![Screenshot of file information of DuckBox.jpg](https://user-images.githubusercontent.com/40383042/147551906-c157c4ad-ae63-4257-b689-5abc94167d4e.png)
+
 
 Upon `binwalk`ing the file, it is revealed that there is a zip file embedded within the file:
 
@@ -42,11 +43,9 @@ replace duck.gif? [y]es, [n]o, [A]ll, [N]one, [r]ename: y
  extracting: duck.gif    
 ```
 
-[duck.gif]
-
 The gif file contains the flag:
 
-[still frame]
+![Still frame of gif containing flag](https://user-images.githubusercontent.com/40383042/147551970-0add3444-48f4-4a37-af55-f818c930434c.png)
 
 
 ### Flag:
