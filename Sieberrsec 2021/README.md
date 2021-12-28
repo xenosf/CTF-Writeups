@@ -53,10 +53,10 @@ Many thanks to HCI IRS for organising this CTF!
 <!--
 **Reverse Engineering**
 * [Reverse](Reverse%20Engineering/Reverse) (164pts)
-
+-->
 **Miscellaneous**
 * [Heads and Tails Part 1](Miscellaneous/Heads%20and%20Tails%20Part%201) (50pts)
--->
+
 
 <!---
 
