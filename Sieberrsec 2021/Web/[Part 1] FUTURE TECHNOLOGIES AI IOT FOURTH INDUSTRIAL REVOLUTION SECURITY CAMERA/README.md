@@ -20,15 +20,14 @@ Try logging in as a camera viewer.
 * link to webpage
 
 ----
-
 ## Solution
 Visiting this link takes us to a login page.
 
-[image]
+![Screenshot of login page](https://user-images.githubusercontent.com/40383042/147542959-c984b4bc-c32d-42e1-8090-c9f668286c4d.png)
 
 This seems like a prime target for an SQL injection, and it is indeed: By entering `' or 1=1;--` in the password field, we can easily bypass the login and access the camera page containing the flag.
 
-[image]
+![Screenshot 2021-12-28 at 15-33-27 FUTURE TECHNOLOGIES CAMERA](https://user-images.githubusercontent.com/40383042/147542989-303cdb97-8096-473f-8457-f7ddb9e2cd73.png)
 
 ### Flag:
 ```
