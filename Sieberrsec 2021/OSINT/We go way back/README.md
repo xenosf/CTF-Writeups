@@ -19,14 +19,13 @@ Flag format: IRS{APPNAME}
 ----
 
 ## Solution
-Opening the link takes us to a Google Slides presentation that reminds me of every PW project presentation I've ever seen.
+Opening the link takes us to a Google Slides presentation that reminds me of every PW project presentation I've ever seen:
 
-[screenshot]
+![Screenshot of provided Google Slides presentation](https://user-images.githubusercontent.com/40383042/147556351-12c334a4-016b-4641-ba64-ffccabcaea7b.png)
 
 Not gonna lie, this challenge was a bit of a scam. I spent a while trying to poke around and access the Google Slides edit history (which was inaccessible due to the link being view only), but all we had to do was use the Wayback machine, which reveals one snapshot containing the (pretty funny) original app name.
 
-[screenshot]
-
+![Screenshot of Wayback Machine snapshot of Google Slides presentation](https://user-images.githubusercontent.com/40383042/147556362-1d949249-06cb-42b2-b6aa-933ed0d17d14.png)
 
 ### Flag:
 ```
