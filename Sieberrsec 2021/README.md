@@ -47,10 +47,10 @@ Many thanks to HCI IRS for organising this CTF!
 * [Digging In The Dump Pt. II](Forensics/Digging%20In%20The%20Dump%20Pt.%20II) (292pts)
 -->
 * [Exploring The Universe! (Part 2)](Forensics/Exploring%20The%20Universe%21%20%28Part%202%29) (382pts; first blood)
-<!--
+
 **Cryptography**
 * [Turbo Fast Crypto, part 1](Cryptography/Turbo%20Fast%20Crypto%2C%20part%201) (117pts)
-
+<!--
 **Reverse Engineering**
 * [Reverse](Reverse%20Engineering/Reverse) (164pts)
 
