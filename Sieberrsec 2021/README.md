@@ -18,42 +18,43 @@ Many thanks to HCI IRS for organising this CTF!
 
 ----
 
-## Solves
-Coming soon!
-<!--
+## Flags
+
 **Web**
+<!--
 * [\[Part 1\] FUTURE TECHNOLOGIES AI IOT FOURTH INDUSTRIAL REVOLUTION SECURITY CAMERA](Web/%5BPart%201%5D%20FUTURE%20TECHNOLOGIES%20AI%20IOT%20FOURTH%20INDUSTRIAL%20REVOLUTION%20SECURITY%20CAMERA) (62pts)
 * [\[Part 2\] FUTURE TECHNOLOGIES AI IOT FOURTH INDUSTRIAL REVOLUTION SECURITY CAMERA](Web/%5BPart%202%5D%20FUTURE%20TECHNOLOGIES%20AI%20IOT%20FOURTH%20INDUSTRIAL%20REVOLUTION%20SECURITY%20CAMERA) (76pts)
-* [TaiYang IT Solution Part 1]() (470pts)
-* [TaiYang IT Solution Part 2: Electric Boogaloo]() (895pts)
-
+* [TaiYang IT Solution Part 1](Web/TaiYang%20IT%20Solution%20Part%201) (470pts)
+* [TaiYang IT Solution Part 2: Electric Boogaloo](TaiYang%20IT%20Solution%20Part%202%3A%20Electric%20Boogaloo) (895pts)
+-->
 * [Exploring The Universe! (Part 1)](Web/Exploring%20The%20Universe%21%20%28Part%201%29) (479pts)
-
+<!--
 **OSINT**
-* [We go way back]() (85pts)
-* [A Wealth of Information Part 1]() (69pts)
-* [A Wealth of Information Part 2]() (243pts)
-* [Public Transport Hunt]() (380pts)
-* ["The Sieberr" Heist Part 1]() (60pts)
-* ["The Sieberr" Heist Part 2]() (333pts)
+* [We go way back](OSINT/We%20go%20way%20back) (85pts)
+* [A Wealth of Information Part 1](OSINT/A%20Wealth%20of%20Information%20Part%201) (69pts)
+* [A Wealth of Information Part 2](OSINT/A%20Wealth%20of%20Information%20Part%202) (243pts)
+* [Public Transport Hunt](OSINT/Public%20Transport%20Hunt) (380pts)
+* ["The Sieberr" Heist Part 1](OSINT/%22The%20Sieberr%22%20Heist%20Part%201) (60pts)
+* ["The Sieberr" Heist Part 2](OSINT/%22The%20Sieberr%22%20Heist%20Part%202) (333pts)
 
-
+-->
 **Forensics**
-
-* [Birds?]() (114pts)
-* [Duck Delivery]() (77pts)
-* [Digging In The Dump Pt. I]() (266pts)
-
+<!--
+* [Birds?](Forensics/Birds%3F) (114pts)
+* [Duck Delivery](Forensics/Duck%20Delivery) (77pts)
+* [Digging In The Dump Pt. I](Forensics/Digging%20In%20The%20Dump%20Pt.%20I) (266pts)
+* [Digging In The Dump Pt. II](Forensics/Digging%20In%20The%20Dump%20Pt.%20II) (292pts)
+-->
 * [Exploring The Universe! (Part 2)](Forensics/Exploring%20The%20Universe%21%20%28Part%202%29) (382pts; first blood)
-
+<!--
 **Cryptography**
-* [Turbo Fast Crypto, part 1]() (117pts)
+* [Turbo Fast Crypto, part 1](Cryptography/Turbo%20Fast%20Crypto%2C%20part%201) (117pts)
 
 **Reverse Engineering**
-* [Reverse]() (164pts) *shd try aft
+* [Reverse](Reverse%20Engineering/Reverse) (164pts)
 
 **Miscellaneous**
-* [Heads and Tails Part 1]() (50pts)
+* [Heads and Tails Part 1](Miscellaneous/Heads%20and%20Tails%20Part%201) (50pts)
 -->
 
 <!---
