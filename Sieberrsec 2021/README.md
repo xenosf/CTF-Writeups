@@ -10,7 +10,7 @@
 
 This marks my first CTF after the A Levels, and the last JC CTF I'll get to participate in. I'm still a bit rusty from the hiatus, but managed to re-awaken some of my dormant knowledge after a while.
 
-This CTF had some very interesting OSINT challenges, and funny Web challenges. I managed to land my first ever first blood in a forensics challenge(!). However, partly due to rustiness (and mostly due to lack of skill), I didn't manage to do many/any cryptography, reverse engineering, or binary exploitation challenges. These are areas that I'm admittedly not the strongest in, and should dive deeper into learning in the future.
+This CTF had some very interesting OSINT challenges, and funny Web challenges. I managed to land my first ever first blood(!). However, partly due to rustiness (and mostly due to lack of skill), I didn't manage to do many/any cryptography, reverse engineering, or binary exploitation challenges. These are areas that I'm admittedly not the strongest in, and should dive deeper into learning in the future.
 
 Overall, I'm happy with my performance and had a very fun and fulfilling experience.
 
