@@ -31,11 +31,11 @@ This challenge may require you to send emails (you could use Gmail, or Outlook, 
 
 Part 2 of this challenge requires us to gain access to v2 of the portal.
 
-[screenshot]
+![Screenshot of v2 login portal](https://user-images.githubusercontent.com/40383042/147600583-93509417-3576-4150-8aed-71b1c264138a.png)
 
 This time, they actually verify that the token is legitimate, and denies access if it is not:
 
-[screenshot]
+<img width="785" alt="Screenshot of failed login with error message 'ERROR 69: TOKEN INTEGRITY VIOLATED. YOU HAVE VIOLATED TAIYANG IT SOLUTION CORE VALUE... TOKEN ARE NOT ALLOW. ERROR.'" src="https://user-images.githubusercontent.com/40383042/147600709-e0c55a6d-0c92-4ab9-b04f-714423091565.png">
 
 This means that, unlike in [Part 1](../TaiYang%20IT%20Solution%20Part%201), we cannot simply use a doctored token, but instead have to somehow obtain the legitimate token from TaiYang IT Solution.
 
@@ -46,7 +46,7 @@ Luckily for us, we've heard that their support staff logs in with their company 
 
 With that, we can create a project in Firebase and enable Google authentication:
 
-[screenshot]
+<img width="1333" alt="Screenshot of Firebase panel showing Google authentication as enabled" src="https://user-images.githubusercontent.com/40383042/147600733-7fcab79e-a83b-4700-8fde-4de32418b674.png">
 
 Additionally, we can use the Firestore Database to store any data, such as the token.
 
@@ -56,11 +56,14 @@ After looking through the Firebase documentation, I put together a patchwork of 
 
 Then, we hosted the webpage online (Firebase has hosting, but we were strapped for time so my teammate helped host it on his server) and emailed the link to TaiYang IT Solution's email address.
 
-[screenshot]
+<img width="1080" alt="Screenshot of email exchange between writer and TaiYang" src="https://user-images.githubusercontent.com/40383042/147600883-254dd10d-b329-4b3c-933e-d3fb53abd22e.png">
 
 After receiving confirmation that they had, in fact, clicked on our very nice and incredibly benign link, we can now use the token we stored, and access the flag.
 
-[screenshots]
+<img width="1120" alt="screenshot of token stored in Firebase database" src="https://user-images.githubusercontent.com/40383042/147600777-51cbf73a-e9c6-4e8f-94de-cb3b3e882d59.png">
+
+![Screenshot of webpage after successful login, containing flag](https://user-images.githubusercontent.com/40383042/147600795-3ade1d44-dc07-49d1-80d3-004faeaceab7.png)
+
 
 ### Flag:
 ```
