@@ -31,9 +31,9 @@ Many thanks to HCI IRS for organising this CTF!
 
 **OSINT**
 * [We go way back](OSINT/We%20go%20way%20back) (85pts)
-<!--
 * [A Wealth of Information Part 1](OSINT/A%20Wealth%20of%20Information%20Part%201) (69pts)
 * [A Wealth of Information Part 2](OSINT/A%20Wealth%20of%20Information%20Part%202) (243pts)
+<!--
 * [Public Transport Hunt](OSINT/Public%20Transport%20Hunt) (380pts)
 * ["The Sieberr" Heist Part 1](OSINT/%22The%20Sieberr%22%20Heist%20Part%201) (60pts)
 * ["The Sieberr" Heist Part 2](OSINT/%22The%20Sieberr%22%20Heist%20Part%202) (333pts)
