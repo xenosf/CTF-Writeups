@@ -25,7 +25,7 @@ Many thanks to HCI IRS for organising this CTF!
 * [\[Part 2\] FUTURE TECHNOLOGIES AI IOT FOURTH INDUSTRIAL REVOLUTION SECURITY CAMERA](Web/%5BPart%202%5D%20FUTURE%20TECHNOLOGIES%20AI%20IOT%20FOURTH%20INDUSTRIAL%20REVOLUTION%20SECURITY%20CAMERA) (76pts)
 <!--
 * [TaiYang IT Solution Part 1](Web/TaiYang%20IT%20Solution%20Part%201) (470pts)
-* [TaiYang IT Solution Part 2: Electric Boogaloo](TaiYang%20IT%20Solution%20Part%202%3A%20Electric%20Boogaloo) (895pts)
+* [TaiYang IT Solution Part 2: Electric Boogaloo](Web/TaiYang%20IT%20Solution%20Part%202%3A%20Electric%20Boogaloo) (895pts)
 -->
 * [Exploring The Universe! (Part 1)](Web/Exploring%20The%20Universe%21%20%28Part%201%29) (479pts)
 <!--
@@ -39,8 +39,8 @@ Many thanks to HCI IRS for organising this CTF!
 
 -->
 **Forensics**
-<!--
 * [Birds?](Forensics/Birds%3F) (114pts)
+<!--
 * [Duck Delivery](Forensics/Duck%20Delivery) (77pts)
 * [Digging In The Dump Pt. I](Forensics/Digging%20In%20The%20Dump%20Pt.%20I) (266pts)
 * [Digging In The Dump Pt. II](Forensics/Digging%20In%20The%20Dump%20Pt.%20II) (292pts)
