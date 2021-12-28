@@ -18,13 +18,13 @@ Remember, nothing is really deleted on the Internet.
 ## Solution
 Reading the blog contents, we can see that there seems to have been a deleted blog post:
 
-<!--image-->
+![Screenshot of latest blog post talking about a deleted post](https://user-images.githubusercontent.com/40383042/147538739-4845d896-aaff-4427-90dd-a95f3d570673.png)
 
 *(and a hint about Git: "#gitgood")*
 
 Using the IPFS Desktop app and the `Qm...` hash from [Part 1](../../Web/Exploring%20The%20Universe%21%20%28Part%201%29), we can access the site's files and see a `git` folder:
 
-<!--image-->
+![Screenshot of IPFS Desktop app file explorer](https://user-images.githubusercontent.com/40383042/147538849-349d9d41-3255-4343-9f74-e54d9702d8b5.png)
 
 After downloading the files, we can explore the git repository. First, we have to rename the `git` folder to `.git`, then re-initialise the repository:
 
@@ -76,10 +76,9 @@ Date:   Sun Dec 26 00:19:41 2021 +0800
 
 From this, we can see that a blog post had been redacted in commit `2aa8f39...`. To see the redacted posts, we need to see the contents of the commit prior to that, `cb35e86...`.
 
-There are multiple ways to do this, but I opted to make a new branch `old` using commit `cb35e86` as the start point, then use `git diff` to expose the differences:
+There are multiple ways to do this, but I opted to make a new branch using commit `cb35e86` as the start point, then use `git diff` to expose the differences:
 
-<!--image-->
-
+![Screenshot of git diff](https://user-images.githubusercontent.com/40383042/147538942-eabbe606-1c61-4138-9d89-0eac82eb9f51.png)
 
 
 ### Flag:
