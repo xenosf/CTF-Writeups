@@ -37,7 +37,9 @@ The information we seek can be found in the EXIF data of the provided image. To 
 
 Using Preview.app, we can open the image and use `Tools > Show Location Info` to look at the information:
 
-[screenshots]
+<img width="610" alt="Screenshot of Preview.app window showing GPS info" src="https://user-images.githubusercontent.com/40383042/147556533-901ef062-9784-43c6-9cbf-4903f664c596.png">
+<img width="610" alt="Screenshot of Preview.app window showing EXIF info" src="https://user-images.githubusercontent.com/40383042/147556542-250f97fa-c5e3-46a1-a4cc-d29e083defe0.png">
+
 
 Alternatively, we can use the command line tool `exiftool` to view the EXIF information (only the relevant information has been pasted below):
 
