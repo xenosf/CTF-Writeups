@@ -51,8 +51,8 @@ The beginner-friendly challenges have names that start with  `🧑‍🎓`
 ## Smart Contract
 
 * [🧑‍🎓 Bonjour](Smart%20Contract/Bonjour) (100pts)
+-->
 
 ## Miscellaneous
 
 * [🧑‍🎓 Regex101](Miscellaneous/Regex101) (100pts)
--->
