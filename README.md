@@ -6,7 +6,7 @@ This repo contains write-ups and some personal thoughts on the CTFs in which I h
 
 ## GitHub Pages
 
-You can also read these on [my website](https://blog.xenosf.io)
+You can also read these on [my website](https://blog.xenosf.io).
 
 ## CTFs
 
