@@ -1,6 +1,7 @@
 # DevSecOps Scenario III
 
 ## Challenge Description
+
 DevOps practices are to combine software development (Dev) and IT operations (Ops) in order to improve the delivery process. DevOps pipelines are chained tasks and components that run in a sequence to cover different phases of software compilation, packaging, automated testing, and test deployment.  
 
 In this lab, we have a DevSecOps pipeline for a Django web application.
@@ -8,6 +9,7 @@ In this lab, we have a DevSecOps pipeline for a Django web application.
 **Objective:** Fix the Issues in the stages of the pipeline and Find the flags!
 
 ## Instructions
+
 * The GitLab server is reachable with the name 'gitlab'
 * [Gitlab credentials provided]
 * [ArcherySec credentials provided]
@@ -27,10 +29,12 @@ From the given resources, we can see that the code for this project is first pus
 We can access the Git repository using `http://gitlab/root/django-blog.git`.
 
 ### Build Test 1: DevSkim
+
 To find out what is wrong, we start a build on Jenkins using the existing code.
 
 Doing so outputs to the console, which we can view using the Jenkins web interface:
-```
+
+```text
 ✂️--- SNIP ---✂️
 [devskim - scan] $ /bin/sh -xe /tmp/jenkins130254802635285484.sh
 + /devskim.sh
@@ -42,24 +46,28 @@ issues found: 1 in 1 files
 build step 'execute shell' marked build as failure
 finished: failure
 ```
+
 > **Note:** The above console output has been trimmed to keep it short. Full output for the build tests mentioned in this write-up can be found in this folder.
 
 The test highlighted an issue in `./.aws/credentials.txt`.
 
 To fix this, we must first clone the code repository, by opening VS Code's integrated terminal (ctrl-\`) and using this command:
-```
+
+```text
 git clone http://gitlab/root/django-blog.git
 ```
 
 Now that we have the code on our machine, we can find the aforementioned file and delete it. (In real life you'd move it to somewhere more appropriate, such as a `.env` file.)
-```
+
+```text
 git rm ./.aws/credentials.txt
 git commit -m "deleted aws credentials"
 git push origin master
 ```
 
 When the code is pushed to the GitLab repository, a build is automatically started. We can view the results of the latest build on Jenkins:
-```
+
+```text
 ✂️--- SNIP ---✂️
 [Devskim - Scan] $ /bin/sh -xe /tmp/jenkins12862511298467905034.sh
 + /devskim.sh
@@ -70,15 +78,18 @@ Triggering a new build of Truffle Hog - Scan
 Finished: SUCCESS
 ```
 
-#### Flag 1:
-```
+#### Flag 1
+
+```text
 8aa6cc853503696b5740a462b57aebb6
 ```
 
 ### Build Test 2: TruffleHog 
+
 Now that we have fixed the first issue, we can take a look at the second stage's output:
 <!--{% raw %}-->
-```
+
+```text
 [Truffle Hog - Scan] $ /bin/sh -xe /tmp/jenkins851098456940431230.sh
 + /trufflehog.sh
 ✂️--- SNIP ---✂️
@@ -100,15 +111,17 @@ Finished: FAILURE
 <!--{% endraw %}-->
 
 We can see that it has highlighted 2 files:
+
 * `./.aws/credentials.txt`
 * `./templates/base.html`
 
 We have already removed `./.aws/credentials.txt` in the earlier step. Next, we have to deal with `./templates/base.html`.
 
-From the console output, we can see that the following tags have been flagged, due to the `integrity` attribute on the `<link` and `<script>` tags. Were this a real life scenario, this would be a false positive of the test as it is not sensitive information – in fact, this attribute improves security by ensuring the imported 3rd-party scripts have not been changed. ([More reading](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) if you're interested)
+From the console output, we can see that the following tags have been flagged, due to the `integrity` attribute on the `<link` and `<script>` tags. Were this a real life scenario, this would be a false positive of the test as it is not sensitive information &ndash; in fact, this attribute improves security by ensuring the imported 3rd-party scripts have not been changed. ([More reading](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) if you're interested)
 
 However, in this case, we can't change the build tests themselves to whitelist these (and it's a fake scenario), so I just deleted the `integrity` attributes and pushed the changes.
-```
+
+```text
 git add ./templates/base.html
 git commit -m "woo! security!"
 git push origin master
@@ -119,17 +132,20 @@ git push origin master
 We're not done yet! TruffleHog searches the Git commit history, which means we have to combine the commits so that these strings do not show up in the diffs.
 
 We can do this by squashing the commits:
-```
+
+```text
 git rebase -i --root
 ```
 
 After squashing the commits, we can unprotect the `master` branch on GitLab and force push the changes.
-```
+
+```text
 git push -f origin master
 ```
 
 Going back to Jenkins, we see that the 2nd stage has succeeded.
-```
+
+```text
 ✂️--- SNIP ---✂️
 [Truffle Hog - Scan] $ /bin/sh -xe /tmp/jenkins2826092293007452953.sh
 + /trufflehog.sh
@@ -139,14 +155,17 @@ Triggering a new build of Bandit
 Finished: SUCCESS
 ```
 
-#### Flag 2:
-```
+#### Flag 2
+
+```text
 cb4f2a3413adc795a5088dd7e7e01a2f
 ```
 
 ### Build Test 3: Bandit
+
 Moving onto the next stage, we can see that it has failed.
-```
+
+```text
 [Bandit] $ /bin/sh -xe /tmp/jenkins15514664569618937391.sh
 ✂️--- SNIP ---✂️
 Test results:
@@ -168,7 +187,8 @@ From this, we can see that the file `./seeder.py` has a security issue, due to t
 To fix this, we can simply delete that line (it doesn't appear to do anything useful anyways), and push the changes.
 
 This time, the build succeeds:
-```
+
+```text
 ✂️--- SNIP ---✂️
 [Bandit] $ /bin/sh -xe /tmp/jenkins3536438064475983714.sh
 ✂️--- SNIP ---✂️
@@ -177,14 +197,17 @@ Triggering a new build of Safety
 Finished: SUCCESS
 ```
 
-#### Flag 3:
-```
+#### Flag 3
+
+```text
 f0ed5839d6addaf6eebc5fc5750ede1c
 ```
 
 ### Build Test 4: Safety
+
 Let's move onto the next stage, which, predictably, fails (are you bored yet?):
-```
+
+```text
 [Safety] $ /bin/sh -xe /tmp/jenkins13354682711613193132.sh
 + /safety.sh
 ✂️--- SNIP ---✂️
@@ -211,16 +234,20 @@ This tells us that the (old) version of the `pillow` package that this project u
 This can be done by editing `requirements.txt`, and changing the version of `pillow` used.
 
 Change
-```
+
+```py
 pillow=6.0.0
 ```
+
 to:
-```
+
+```py
 pillow=7.1.0
 ```
 
 In Jenkins, we can see now that the build has succeeded and this test succeeds:
-```
+
+```text
 [Safety] $ /bin/sh -xe /tmp/jenkins2793373912626157167.sh
 ✂️--- SNIP ---✂️
 + /safety.sh
@@ -234,16 +261,19 @@ Triggering a new build of Django Application Installation
 Finished: SUCCESS
 ```
 
-#### Flag 4:
-```
+#### Flag 4
+
+```text
 46d5b8115e47963392f66c5b6941c2e
 ```
 
 The next few stages succeed, so let's skip to the next one that fails.
 
 ### Build Test 8: Inspec
+
 Oh no the 2nd last one failed :( so close
-```
+
+```text
 [Inspec - Compliance] $ /bin/sh -xe /tmp/jenkins16818181110745954727.sh
 + chmod +x /inspec.sh
 + /inspec.sh
@@ -266,6 +296,7 @@ Finished: FAILURE
 ```
 
 This test has flagged 3 issues:
+
 1. `/home/tomcat/app/` should be a directory
 2. `/home/tomcat/app/` should be owned by `tomcat`
 3. `/home/tomcat/app/` should have permissions mode `0750` instead of `0755`
@@ -275,6 +306,7 @@ Poking around in the project, we can find `django.yml`, which looks like it's th
 > **Note**: Unfortunately, I lost the original file so I can only show the edited version.
 
 **Fixed file:**
+
 ```yaml
 ---
 - hosts: test-server                                       
@@ -321,13 +353,14 @@ Poking around in the project, we can find `django.yml`, which looks like it's th
 ```
 
 Here's the changes I made to fix the issues:
+
 1. Changed `file` to `directory`
 2. Changed (or added? I forgot lol) the `chown` command to make `tomcat:tomcat` the owner
 3. Added the `chmod 750 /home/tomcat/app/` line to change permissions of the folder
 
 After committing and pushing the changes, we can see that it succeeds and finally gets built!
 
-```
+```text
 [Inspec - Compliance] $ /bin/sh -xe /tmp/jenkins10997141552396738775.sh
 + chmod +x /inspec.sh]
 + /inspec.sh
@@ -344,8 +377,9 @@ FLAG 5: 3d5ef9972e4954dd883106240858bf6b
 Finished: SUCCESS
 ```
 
-#### Flag 5:
-```
+#### Flag 5
+
+```text
 3d5ef9972e4954dd883106240858bf6b
 ```
 

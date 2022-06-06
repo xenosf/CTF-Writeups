@@ -1,14 +1,17 @@
 # WPA
 
 ## Challenge Description
+
 The resistance has successfully intercepted encrypted WiFi traffic from a Cyber-BOT believed to communicate with the HQ. It is your task as a security analyst and cyber expert to decrypt the traffic and find out if there is any valuable information about the communication.
 
 ## Attached files
+
 * pcap.cap
 
 ---
 
 ## Solution
+
 First, we can open the file in Wireguard. As expected, since it is encrypted, we cannot make sense of the data:
 
 <img width="1332" alt="Screenshot 2021-06-24 at 15 12 01" src="https://user-images.githubusercontent.com/40383042/126428896-5f009ab7-a503-46f2-901d-08d66da708c8.png">
@@ -18,7 +21,8 @@ To decrypt the traffic, we must first make sure that the data contains the 4-way
 <img width="1332" alt="Screenshot 2021-06-24 at 11 10 5111117" src="https://user-images.githubusercontent.com/40383042/126428922-dbd105d8-cb8b-4579-bbed-cb0c3d742485.png">
 
 We can then crack the key using `aircrack-ng`:
-```
+
+```text
 $ aircrack-ng -c pcap.cap -w /usr/share/wordlists/rockyou.txt
 Reading packets, please wait...
 Opening pcap.cap
@@ -61,11 +65,11 @@ Read 892 packets.
 
 In this case, I used the `rockyou` wordlist, provided with Kali.
 
-Aircrack managed to get the key fairly easily – let's go back to Wireshark to decrypt the capture. First, let us enter the key into Wireshark, by going to `Settings > Protocols > IEEE 802.11`:
+Aircrack managed to get the key fairly easily &ndash; let's go back to Wireshark to decrypt the capture. First, let us enter the key into Wireshark, by going to `Settings > Protocols > IEEE 802.11`:
 
 <img width="858" alt="Screenshot 2021-07-21 at 10 15 08" src="https://user-images.githubusercontent.com/40383042/126428957-5d23b966-c817-474e-914e-d646f3fe8a7b.png">
 
-For WPA, we enter `key:SSID` – the key was cracked earlier, and the SSID can be found earlier:
+For WPA, we enter `key:SSID` &ndash; the key was cracked earlier, and the SSID can be found earlier:
 
 <img width="688" alt="Screenshot 2021-06-24 at 11 10 5sdfdf111117" src="https://user-images.githubusercontent.com/40383042/126428968-30517ed1-a647-423b-95b5-38b8fe6669e9.png">
 
@@ -81,7 +85,8 @@ This looks like where we should be looking, but the flag itself isn't here. We c
 
 <img width="534" alt="Screenshot 2021-06-24 at 15 18 35" src="https://user-images.githubusercontent.com/40383042/126429049-8fca8ea8-2053-4da2-ba74-630f416cb82d.png">
 
-### Flag:
-```
+### Flag
+
+```text
 CDDC21{-DecRypted_WPA-}
 ```

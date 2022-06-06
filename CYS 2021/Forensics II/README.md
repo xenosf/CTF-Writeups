@@ -1,6 +1,7 @@
 # Forensics II
 
 ## Challenge Description
+
 A container is running in the lab and a flag file is supposed to be present in the home directory of the root user. The flag is a string of 32 hexadecimal characters.
 
 **Objective:** Retrieve the flag!
@@ -8,15 +9,18 @@ A container is running in the lab and a flag file is supposed to be present in t
 ---
 
 ## Solution
+
 To view the running containers, we can use `docker ps`:
-```
+
+```text
 student@localhost:~$ docker ps
 CONTAINER ID        IMAGE               COMMAND               CREATED             STATUS              PORTS               NAMES
 8932bbf90332        ubuntuderived       "tail -f /dev/null"   12 minutes ago      Up 12 minutes                           mod-ubuntu
 ```
 
 We can run a new container with the image and try to see the contents of the flag file:
-```
+
+```text
 student@localhost:~$ docker run ubuntuderived cat flag
 Overwritten
 ```
@@ -24,7 +28,8 @@ Overwritten
 Unfortunately, it has been overwritten!
 
 Fortunately, Docker allows us to view the history of an image:
-```
+
+```text
 student@localhost:~$ docker history ubuntuderived
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
 1b0b3bfeee1b        18 months ago       /bin/sh -c chmod +x /bin/bash                   1.11MB              
@@ -39,12 +44,14 @@ IMAGE               CREATED             CREATED BY                              
 ```
 
 From the history, we can see that before the flag file was overwritten, it contained the MD5 hash of `/bin/bash`. Since `/bin/bash` has not been changed since then, to recover it, we can simply get its hash again:
-```
+
+```text
 student@localhost:~$ docker run ubuntuderived md5sum /bin/bash 
 557c0271e30cf474e0f46f93721fd1ba  /bin/bash
 ```
 
-### Flag:
-```
+### Flag
+
+```text
 557c0271e30cf474e0f46f93721fd1ba
 ```

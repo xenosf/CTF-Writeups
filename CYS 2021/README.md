@@ -1,6 +1,6 @@
 # Cyber Youth Summit 2021
 
-**Team:** "Thanks for carry" 
+**Team:** "Thanks for carry"
 
 **Results:** 2300 points | #12/83
 
@@ -17,6 +17,7 @@ Many thanks to Cyber Youth Singapore and Pentester Academy for hosting this CTF!
 ---
 
 ## Flags
+
 * [AWS Security I](AWS%20Security%20I) (100pts)
 * [DevSecOps Scenario I](DevSecOps%20Scenario%20I) (100pts)
 * [DevSecOps Scenario II](DevSecOps%20Scenario%20II) (200pts)

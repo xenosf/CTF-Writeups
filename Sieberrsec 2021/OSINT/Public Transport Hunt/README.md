@@ -1,4 +1,4 @@
-# Public Transport Hunt 
+# Public Transport Hunt
 
 **Category**: OSINT
 
@@ -7,6 +7,7 @@
 ----
 
 ## Challenge Description
+
 My friend stole my $10 book voucher and camera away and took these pictures of bus stops and train stations...
 
 I have absolutely no idea where he is now.
@@ -26,15 +27,19 @@ B = MRT station code (include line code without spacing) in the second image
 C = Postal code of the building right beside the bus stop he was at in the third image
 
 ## Attached files
+
 * youcantfindme.zip, containing 3 images:
 
 ### 1.jpeg
+
 ![1](https://user-images.githubusercontent.com/40383042/147566333-16e40fe7-6bbb-4be4-a716-2b88b894f731.jpeg)
 
 ### 2.jpeg
+
 ![2](https://user-images.githubusercontent.com/40383042/147566344-042c0287-6e38-44a2-981a-6ea2444889df.jpeg)
 
 ### 3.jpeg
+
 ![3](https://user-images.githubusercontent.com/40383042/147566362-2f19bc15-53e9-47bc-b441-18b2d9da8868.jpeg)
 
 ----
@@ -79,7 +84,6 @@ After a bit of searching and [confirmation using Street View](https://goo.gl/map
 
 <img width="746" alt="Screenshot of Google Maps information panel containing postal code of adjacent building" src="https://user-images.githubusercontent.com/40383042/147571266-cc6c8558-29a1-46bf-ac70-e2b72f508e70.png">
 
-
 ### 1.jpeg
 
 This was the most challenging image to work from, in my opinion. From the other two images, we know that the location is in the west of Singapore, near Boon Lay.
@@ -110,7 +114,8 @@ Indeed, we can now find the bus stop, which is numbered `22599`.
 
 <img width="629" alt="image" src="https://user-images.githubusercontent.com/40383042/147571679-6c6d2183-24d9-4175-a84d-584ef54a2601.png">
 
-### Flag:
-```
+### Flag
+
+```text
 IRS{22599_EW27_609961}
 ```

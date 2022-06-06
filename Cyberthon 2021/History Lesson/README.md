@@ -1,13 +1,20 @@
 # History Lesson
+
 **Category:** Forensics
 
 ---
+
 ## Challenge Description
+
 Okay. I have both good news, and bad news. The bad news is that APOCALYPSE has deployed a mole to infiltrate our investigation team and he managed to send over one of our precious flags to them. However, the good news is that we've identified the mole, apprended him, and also obtained his browser history. Can you do some forensics and figure out what flag he leaked?
 ## Attached files
+
 * Mozilla.zip
+
 ---
+
 ## Solution
+
 Upon unzipping the file, I started looking through the folder's contents, landing in the profile folder.
 
 I was on the lookout for something along the lines of 'history', but since there was nothing named such, the browser history was stored somewhere else. `places.sqlite` caught my eye - after all, browser history is a record of the *places* he'd visited.
@@ -44,7 +51,6 @@ Opening the link takes us to the pastebin with the flag.
 
 <img width="1033" alt="Screenshot 2021-05-10 at 09 01 03" src="https://user-images.githubusercontent.com/40383042/117594254-4c54a000-b170-11eb-9c3e-09d046150027.png">
 
-
-```
+```text
 Cyberthon{why_4r3_y0u_5py1ng_0n_m3_y1k35}
 ```

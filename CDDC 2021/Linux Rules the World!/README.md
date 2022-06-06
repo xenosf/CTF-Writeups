@@ -1,9 +1,11 @@
-# Linux Rules the World!
+# Linux Rules the World&excl;
+
 **Category:** Linux
 
 ---
 
 ## Flags
+
 * [1 - Lock and Key](1%20-%20Lock%20and%20Key) (100pts)
 * [2 - License to Run](2%20-%20License%20to%20Run) (100pts)
 * [3 - Historian](3%20-%20Historian) (200pts)
