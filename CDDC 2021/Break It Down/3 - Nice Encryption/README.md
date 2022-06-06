@@ -28,4 +28,4 @@ I'm honestly not sure what to do with this information, since the key wasn't the
 
 ```text
 CDDC21{Wh0_wrot3_th!s_Thin6?}
-```text
+```
