@@ -12,7 +12,7 @@ Had a lot of fun in the 48h duration (and became spontaneously nocturnal in the 
 
 I particularly enjoyed the beginner-friendly flags -- As a relative noob myself, these challenges were very educational and I learnt a lot.
 
-Many thanks to SEETF for hosting this CTF!
+Many thanks to Social Engineering Experts for hosting this CTF!
 
 ----
 
