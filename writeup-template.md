@@ -17,9 +17,9 @@ Challenge Description
 
 ### givencode.py
 
-```text
+```py
 given code
-```text
+```
 
 ----
 
@@ -31,4 +31,4 @@ solution
 
 ```text
 flag
-```text
+```
