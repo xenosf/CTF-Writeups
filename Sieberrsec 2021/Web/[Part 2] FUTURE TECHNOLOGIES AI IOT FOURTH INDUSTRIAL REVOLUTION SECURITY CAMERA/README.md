@@ -7,6 +7,7 @@
 ----
 
 ## Challenge Description
+
 In our recent investigations, Siebersec got hold of a
 
 ***FUTURE TECHNOLOGIES AI IOT FOURTH INDUSTRIAL REVOLUTION SECURITY CAMERA*** .
@@ -15,8 +16,8 @@ I think that the camera is intentionally pointed away from something we need to 
 
 Find a way to rotate the camera (pan the camera) and let us see more things.
 
-
 ## Attached files
+
 * link to same webpage as [Part 1](../%5BPart%201%5D%20FUTURE%20TECHNOLOGIES%20AI%20IOT%20FOURTH%20INDUSTRIAL%20REVOLUTION%20SECURITY%20CAMERA)
 
 ----
@@ -37,9 +38,9 @@ After refreshing the page, we now have the admin role, and can pan the camera to
 
 ![Screenshot of camera page with flag revealed](https://user-images.githubusercontent.com/40383042/147543174-cc05342b-a6d3-4f96-8d81-6734194a319a.png)
 
+### Flag
 
-### Flag:
-```
+```text
 IRS{7h3_In73rn37_0f_vULn3erable_7hIng5}
 ```
 

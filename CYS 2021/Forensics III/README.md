@@ -1,6 +1,7 @@
 # Forensics III
 
 ## Challenge Description
+
 A memory dump of a Windows machine is provided in the home directory of the root user. You have to use Volatility to analyze the memory dump and answer the following questions:
 
 1. The Attackers have exploited the server remotely and spawned multiple processes to take over the machine. What is the filename of the server which was compromised?
@@ -9,11 +10,13 @@ A memory dump of a Windows machine is provided in the home directory of the root
 4. The exploited process has launched multiple firefox processes. Most probably either it is visiting a web page or downloading payload using the browser. What is the domain name of the accessed portal? (Hint: String 788 is part of the domain name)
 
 ## Provided files
+
 * memory_dump.mem
 
 ---
 
 ## Solution
+
 > **Note:** The output of the commands has been trimmed to keep it short.
 
 I figured this would be similar to the [previous Volatility challenge](../Forensics%20I), and I tried running some plugins immediately. However, Volatility kept screaming at me that it was not working (same, honestly).
@@ -30,6 +33,7 @@ INFO    : volatility.debug    : Determining profile based on KDBG search...
 From this point onwards, we can use the `Win10x64_10240_17770` or `Win10x64` profiles.
 
 ### 1. Find filename of compromised server
+
 From the challenge statement, we can see that the exploited process launched multiple Firefox processes. Therefore, to find the exploited processes, we should find the parent process of the Firefox processes.
 
 We can view parent-child process relations easily using the `pstree` plugin:
@@ -60,6 +64,7 @@ badblue.exe
 ```
 
 ### 2. Find port number used by exploited process
+
 To view the network connections, we can use the `netscan` plugin:
 ```
 root@attackdefense:~# vol.py -f memory_dump.mem --profile=Win10x64 netscan           
@@ -81,6 +86,7 @@ From the list, we can find the exploited process (`badblue.exe`) and see the por
 ```
 
 ### 3. Find core process hijacked by attackers
+
 We can use the `malfind` plugin to find this.
 
 However, during the CTF, it somehow didn't cross my mind to try that plugin, so I looked up core Windows processes and found [this page](https://www.andreafortuna.org/2017/06/15/standard-windows-processes-a-brief-reference/) that pointed out `winlogon.exe` is often used by malware to run things on the shell. Lo and behold, it was, indeed, the answer. 🤷‍♂️
@@ -91,6 +97,7 @@ winlogon.exe
 ```
 
 ### 4. Find domain name of accessed portal
+
 To find this, I dumped the strings of the memory dump and searched for a web link containing `788`:
 ```
 root@attackdefense:~# strings memory_dump.mem >> str.txt
@@ -104,4 +111,4 @@ http://www.random-788-registered.com/
 random-788-registered.com
 ```
 
-> **Note:** I might have misremembered some of the flags (Flag 2?) – the rest of the write-up still applies, but I did a handful of tries of similar answers and forgot to note down the exact flags that were correct. If I did mess up, please let me know (open an issue or something). Thanks! :)
+> **Note:** I might have misremembered some of the flags (Flag 2?) &ndash; the rest of the write-up still applies, but I did a handful of tries of similar answers and forgot to note down the exact flags that were correct. If I did mess up, please let me know (open an issue or something). Thanks! :)

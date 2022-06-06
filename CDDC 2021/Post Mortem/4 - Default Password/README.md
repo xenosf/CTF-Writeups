@@ -1,16 +1,19 @@
 # Default Password
 
 ## Challenge Description
+
 Members of TheKeepers got their hands on one of the GDC computers. They created a memory dump of the system as they believe it might contain some juicy info. Help them find proof.
 
 Note: You need to insert the correct answer to the flag structure. For example: CDDC21{code}
 
 ## Attached files
+
 * data
 
 ---
 
 ## Solution
+
 Using the `lsadump` plugin in Volatility, we can get the LSA (Local Security Authority) secrets, which includes the default password.
 
 ```
@@ -24,8 +27,8 @@ DPAPI_SYSTEM	,+©iJgvsN¸%ð^ºö®þ
 qûÒ°	2c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 2b 1e a9 10 69 4a 89 05 67 80 76 73 4e 02 1d b8 25 f0 99 5e 1b 86 ba f6 01 87 ae 06 fe 1d 0a 7a 96 71 84 fb 0f 03 d2 b0 00 00 00 00
 ```
 
+### Flag
 
-### Flag:
-```
+```text
 CDDC21{.Th1s_i$_A_L0ng_p@s$w0rd} 
 ```

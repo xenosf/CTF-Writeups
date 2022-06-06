@@ -7,6 +7,7 @@
 ----
 
 ## Challenge Description
+
 Where was I?
 
 Submit the flag as follows:
@@ -24,6 +25,7 @@ X = The name of the route/road
 ----
 
 ## Solution
+
 Using the GPS data of the image from [Part 1](../A%20Wealth%20of%20Information%20Part%201), we know where the photo was taken:
 
 ```sh
@@ -48,8 +50,9 @@ However, the information available on Google Maps is insufficient to solve the o
 
 Using the above map, we can see that the name of the route is `Route 2` and the nearest building is `Telecom`.
 
-### Flag:
-```
+### Flag
+
+```text
 IRS{589333_ROUTE_2_TELECOM}
 ```
 

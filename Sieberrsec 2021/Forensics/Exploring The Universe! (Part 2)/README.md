@@ -7,6 +7,7 @@
 ----
 
 ## Challenge Description
+
 Oh noes! It seems like Agent Myat has some rather fun teammates, and theres something they're trying to hide!
 
 Look for the clues and try to uncover what he has been doing lately.
@@ -16,6 +17,7 @@ Remember, nothing is really deleted on the Internet.
 ----
 
 ## Solution
+
 Reading the blog contents, we can see that there seems to have been a deleted blog post:
 
 ![Screenshot of latest blog post talking about a deleted post](https://user-images.githubusercontent.com/40383042/147538739-4845d896-aaff-4427-90dd-a95f3d570673.png)
@@ -36,7 +38,7 @@ Reinitialized existing Git repository in .../QmZ15yK5GE7gKzKSNC2yj9nLWwNH7sbgyyF
 
 Then, we can take a look at the commit history using `git log`:
 
-```
+```text
 commit 67a74c89c31e663869e9a5d122989842e58b6949 (HEAD -> master)
 Author: willi123yao <willi123yao@gmail.com>
 Date:   Sun Dec 26 00:23:41 2021 +0800
@@ -80,9 +82,9 @@ There are multiple ways to do this, but I opted to make a new branch using commi
 
 ![Screenshot of git diff](https://user-images.githubusercontent.com/40383042/147538942-eabbe606-1c61-4138-9d89-0eac82eb9f51.png)
 
+### Flag
 
-### Flag:
-```
+```text
 IRS{G3TT1NG-G00D-1S-the-WAY-T0-5UCC35S!}
 ```
 

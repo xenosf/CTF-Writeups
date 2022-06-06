@@ -20,8 +20,8 @@ This challenge may require you to send emails (you could use Gmail, or Outlook, 
 
 ^ source is slightly modified from original
 
-
 ## Attached files
+
 * link to webpage
 * 7z file containing source code of page
 
@@ -64,9 +64,9 @@ After receiving confirmation that they had, in fact, clicked on our very nice an
 
 ![Screenshot of webpage after successful login, containing flag](https://user-images.githubusercontent.com/40383042/147600795-3ade1d44-dc07-49d1-80d3-004faeaceab7.png)
 
+### Flag
 
-### Flag:
-```
+```text
 IRS{a77rac71ng_y0uR_aUD13nc3}
 ```
 
@@ -75,7 +75,9 @@ IRS{a77rac71ng_y0uR_aUD13nc3}
 ----
 
 ### Footnote
+
 Here are the relevant documentation pages containing the snippets we used:
+
 * [Google sign-in](https://firebase.google.com/docs/auth/web/google-signin#handle_the_sign-in_flow_with_the_firebase_sdk)
 * [Retrieving ID token after sign in](https://firebase.google.com/docs/auth/admin/verify-id-tokens#retrieve_id_tokens_on_clients)
 * [Adding data to Firestore](https://firebase.google.com/docs/firestore/quickstart#add_data)
@@ -83,6 +85,7 @@ Here are the relevant documentation pages containing the snippets we used:
 Here's the code we used for our page (cleaned up because the original was a mess):
 
 **App.js:**
+
 ```jsx
 import './App.css';
 import React from 'react';
