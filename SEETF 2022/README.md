@@ -43,15 +43,15 @@ The beginner-friendly challenges have names that start with  `🧑‍🎓`
 
 * [🧑‍🎓 BestSoftware](Reverse%20Engineering/BestSoftware) (100pts)
 
-### Pwn
-
-* [🧑‍🎓 4mats](Pwn/4mats) (100pts)
-* [🧑‍🎓 Wayyang.py](Pwn/Wayyang.py) (100pts)
-
 ## Smart Contract
 
 * [🧑‍🎓 Bonjour](Smart%20Contract/Bonjour) (100pts)
 -->
+
+### Pwn
+
+<!--* [🧑‍🎓 4mats](Pwn/4mats) (100pts)-->
+* [🧑‍🎓 Wayyang.py](Pwn/Wayyang.py) (100pts)
 
 ## Miscellaneous
 
