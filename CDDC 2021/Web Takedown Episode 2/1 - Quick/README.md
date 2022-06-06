@@ -1,6 +1,7 @@
 # Quick
 
 ## Challenge Description
+
 One of the Keepers founded an interesting website used by the GDC as a command and control (C2) system. I tried to use it, but I think I just too slow…
 
 Target URL: `http://X.X.X.X/UMJVHRV5` [IP redacted]
@@ -8,6 +9,7 @@ Target URL: `http://X.X.X.X/UMJVHRV5` [IP redacted]
 ---
 
 ## Solution
+
 Visiting the URL takes us to a GDC page, where we have to enter in the hash of the provided beacon, which changes every time the page reloads.
 
 However, when doing it manually, it tells us we are too slow.
@@ -36,7 +38,8 @@ driver.find_element_by_name("execute").click()
 
 <img width="1392" alt="Screenshot 2021-06-24 at 18 50 31" src="https://user-images.githubusercontent.com/40383042/126438796-ef360a73-6ce2-4e6d-b4dd-ce2aed667268.png">
 
-### Flag:
-```
+### Flag
+
+```text
 CDDC21{!t_wAs-S0_fasT!}
 ```

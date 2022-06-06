@@ -7,6 +7,7 @@
 ----
 
 ## Challenge Description
+
 We found the frontend code for a remote encryption service at `nc [challenge IP]`:
 
 ```python
@@ -46,7 +47,8 @@ print(key)
 
 Running the above script prints the flag.
 
-### Flag:
-```
+### Flag
+
+```text
 IRS{secrets_are_revealed!!}
 ```

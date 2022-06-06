@@ -7,6 +7,7 @@
 ----
 
 ## Challenge Description
+
 This document came from outer space, it seems a bit broken, I wonder if someone can fix it.
 
 The flag is in the flag format: STC{...}
@@ -19,6 +20,7 @@ The flag is in the flag format: STC{...}
 ----
 
 ## Solution
+
 Looking at the start of the document, we can see that it is a PDF of some sort:
 ```
 =pod%PDF-1.4
@@ -73,7 +75,8 @@ The `-o` specifies the object, and `-f` ("filter") applies a filter, which for n
 
 From the output, we can see that the flag is hidden within the compressed object.
 
-### Flag:
+### Flag
+
 ```
 STC{PDF_Is_4_veRY_Fl3XIBL3_fORmaT}
 ```

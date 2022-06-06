@@ -7,6 +7,7 @@
 ----
 
 ## Challenge Description
+
 Found this picture from somewhere, and NOW it's YOUR TURN to find something out from it!
 
 Tell me:
@@ -28,11 +29,13 @@ Submit the flag as follows:
 IRS{*A_B_C_D_E_F*}
 
 ## Attached files
+
 * trees.jpg
 
 ----
 
 ## Solution
+
 The information we seek can be found in the EXIF data of the provided image. To view it, we can use a photo viewing/editing program, or use a command line tool.
 
 Using Preview.app, we can open the image and use `Tools > Show Location Info` to look at the information:
@@ -63,8 +66,9 @@ Modify Date                     : 2021:10:16 14:04:20+08:00
 
 ```
 
-### Flag:
-```
+### Flag
+
+```text
 IRS{Apple_f/1.6_5.1mm_OFF_161021_ABOVE}
 ```
 

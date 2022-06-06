@@ -1,6 +1,7 @@
 # Broken System
 
 ## Challenge Description
+
 The CryptIT Banking and Consulting company suspects that the GlobalDominationCorporation is attacking its email systems. They need your help to fix the misconfiguration.
 
 ---
@@ -18,7 +19,8 @@ However, the DMARC record had the flag!
 
 ![Screenshot 2021-06-23 at 19-33-20 DMARC Record Lookup - DMARC Validation - DNSChecker org](https://user-images.githubusercontent.com/40383042/126385067-4e4912a9-530f-464c-af51-ed703a2c789c.png)
 
-### Flag:
-```
+### Flag
+
+```text
 CDDC21{_10x_f0r_yOur_Serv!ce_}
 ```

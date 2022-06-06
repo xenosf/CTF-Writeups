@@ -1,6 +1,7 @@
 # DevSecOps Scenario II
 
 ## Challenge Description
+
 Testing automation with Selenium can improve the DevOps process by taking out the required human effort and it also prevents human testing errors.
 
 In this challenge, the user has been provided access to VSCode IDE (with selenium and selenium python binding installed on it). The user can observe the browser automation in action by checking the output Firefox window and the target webapp can also be inspected by clicking the webapp link. The target webapp can also be accessed on the domain name "webapp" (from VSCode machine).
@@ -8,9 +9,12 @@ In this challenge, the user has been provided access to VSCode IDE (with seleniu
 **Objective:** Write a script to automate the dictionary attack on the webapp!
 
 ## Provided Files
+
 * template-code.py
 * password-list.txt
+
 ### template-code.py
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -51,7 +55,8 @@ In the end, I didn't have any time left to try and get the code to work, so... I
 
 Would love to read a proper write-up on this!
 
-### Flag:
-```
+### Flag
+
+```text
 12cfc9943bK
 ```

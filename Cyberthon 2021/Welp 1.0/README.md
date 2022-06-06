@@ -1,14 +1,21 @@
 # Welp 1.0
+
 **Category:** Crypto
 
 ---
+
 ## Challenge Description
+
 APOCALYPSE has recently started to encrypt all their files with RSA. But the moment we saw their implementation, all we can say is welp. Let's see if you can manage to decrypt a flag that has been encrypted with their script.
+
 ## Attached files
+
 * generate.py
 * pubkey.pem
 * flag.txt.encrypted
+
 ### generate.py
+
 ```python
 from Crypto.Util.number import getPrime
 from Crypto.PublicKey import RSA
@@ -28,8 +35,11 @@ with open('./dist/flag.txt.encrypted', 'wb') as f:
 with open('./dist/pubkey.pem', 'wb') as f:
     f.write(rsa.export_key('PEM'))
 ```
+
 ---
+
 ## Solution
+
 Looking at the provided code, something was sus. More specifically, this line:
 
 ```python
@@ -81,6 +91,6 @@ for k in range(0, 1000):
 
 that gives us the decoded flag! 🎉
 
-```
+```text
 Cyberthon{w3lp_th15_15_4b50lut3ly_n0t_h0w_y0u_5h0uld_r5444}
 ```

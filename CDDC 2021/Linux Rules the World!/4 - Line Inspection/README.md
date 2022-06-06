@@ -1,13 +1,16 @@
-# Linux 4 – Line Inspection
+# Linux 4 &ndash; Line Inspection
 
 ## Challenge Description
+
 The bots were able to encrypt their secrets but we found that they were owned by `bot3`. Are there some traces of human-readable text? 		 		
 
 ## Note
+
 The Linux challenges are consecutive, starting from [part 1](../1%20-%20Lock%20and%20Key).
 
 ---
 ## Solution
+
 First, we must log in to `bot4`, using the previous flag as the password, and then change directory to `bot4`'s home directory:
 ```
 bot3@cybot01:~$ su bot4
@@ -41,7 +44,8 @@ bot4@cybot01:~$ strings random-secrets | grep CDDC
 CDDC21{gRe3EpL1nG}  
 ```
 
-### Flag:
+### Flag
+
 ```
 CDDC21{gRe3EpL1nG}
 ```

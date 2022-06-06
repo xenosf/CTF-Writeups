@@ -12,8 +12,8 @@ TaiYang IT Solution offers a variety of services, including one that is put behi
 
 Log in as the admin, and get the flag!
 
-
 ## Attached files
+
 * link to webpage
 * 7z file containing source code of page
 
@@ -26,15 +26,15 @@ Opening the link provided takes us to this mildly-dubious-looking website with l
 Poking around the site a bit, we find a press release, which gives us hints on how to solve the challenge:
 
 > **Press Release on Cybersecurity Incident**
-> 
+>
 > Our preliminary investigations revealed that our systems did not perform adequate checks for **JSON WEB tokens** issued from SSO providers like Google.
-> 
+>
 > This allowed attackers to login as TaiYang IT Solution users accounts such as taiyang.it.solution [ at ] gmail.com.
-> 
+>
 > However, due to adequate IP address protection on our end, no user data was disclosed.
-> 
+>
 > TaiYang IT Solution is rolling out a v2 portal which addresses the original security vulnerability.
-> 
+>
 > TaiYang IT Solution.
 
 Essentially, JSON Web Tokens (JWTs) encode data and allow for verification. However, as seen from this press release, this website does not verify the tokens properly, allowing us to just use a doctored one to trick the website into thinking we are signing in using their user account.
@@ -93,9 +93,9 @@ Sending this doctored token to the login page (I used the developer tools' "edit
 
 ![Screenshot of page with flag](https://user-images.githubusercontent.com/40383042/147595874-6d54cdf0-913e-4096-9ebe-de3112196a79.png)
 
+### Flag
 
-### Flag:
-```
+```text
 IRS{g00g13_s1gn_1n_d035nt_m3aN_y0uR3_sAf3}
 ```
 

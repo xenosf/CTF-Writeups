@@ -7,6 +7,7 @@
 ----
 
 ## Challenge Description
+
 I've stolen the Nova Core, but it seems like I've been locked in within these 3 airlock doors. I'm not sure how much longer I can hold them off Please help me crack the password so that I can be on my merry way!
 
 `http://X.X.X.X:55030` [IP redacted]
@@ -198,7 +199,7 @@ The next few parts are more mathematics. To keep it short, I'll be identifying e
 3J3C7_7H3M_0ab_cd_7ef_ghijkl...
 ```
 
-The character codes of "0" is 48,  and "7" is 55. Using this information, we can then form more equations. (For simplicity, I didn't show all of them here – only the ones that immediately gave us more characters)
+The character codes of "0" is 48,  and "7" is 55. Using this information, we can then form more equations. (For simplicity, I didn't show all of them here &ndash; only the ones that immediately gave us more characters)
 
 ![png latex-4](https://user-images.githubusercontent.com/40383042/126899042-0eaed986-bac0-4ab5-bdba-9a583a9fa9a5.png)
 
@@ -218,7 +219,8 @@ Sure enough, when I entered in the password, the 3 airlocks opened and triggered
 
 <img width="1391" alt="Screenshot 2021-07-24 at 06 18 27" src="https://user-images.githubusercontent.com/40383042/126899044-c301dc4f-c71b-42bd-9a17-e14d6614fbbc.png">
 
-### Flag:
+### Flag
+
 ```
 STC{3J3C7_7H3M_0U7_0F_7H3_41RL0CK}
 ```

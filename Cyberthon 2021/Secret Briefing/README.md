@@ -1,19 +1,27 @@
 # Secret Briefing
+
 **Category:** Forensics
 
 ---
+
 ## Challenge Description
+
 Since APOCALYPSE recently deployed a mole to infiltrate our investigation team, we've decided to return the favor and deployed one of our members to attend their "super secrect briefing" to gather some intel on their latest schemes. Unfortunately, it seems that our mole got compromised. But on the bright side, he managed to send us a copy of the meeting slides before he got compromised. However, the most critical slide in the powerpoint seems to be missing. It would be a big help to us if you could recover the contents of that slide!
+
 ## Attached files
+
 * apocalypse-redacted.pptx
 
 ---
+
 ## Solution
+
 Opening the file in Powerpoint, we see the presentation.
 
 <img width="1552" alt="Screenshot 2021-05-10 at 09 39 01" src="https://user-images.githubusercontent.com/40383042/117604213-5f269f00-b187-11eb-8e35-ee3985f02470.png">
 
 The titles of the slides are helpfully in order, showing us which one is missing.
+
 * Step_1
 * Step_2
 * Step_3
@@ -29,6 +37,7 @@ In the `ppt` folder, there was a file called `presentation.xml`.
 <img width="1230" alt="Screenshot 2021-05-10 at 14 35 37" src="https://user-images.githubusercontent.com/40383042/117617023-8b014f00-b19e-11eb-981c-515a56d84a94.png">
 
 Opening it up reveals this section: (prettified for readability)
+
 ```xml
     <p:sldIdLst>
         <p:sldId id="256" r:id="rId6"/>
@@ -39,10 +48,13 @@ Opening it up reveals this section: (prettified for readability)
         <p:sldId id="262" r:id="rId12"/>
     </p:sldIdLst>
 ```
+
 From this, we can deduce that there is a missing element:
+
 ```xml
     <p:sldId id="261" r:id="rId11"/>
 ```
+
 Replacing it, and converting the folder back to a .pptx, should give us the presentation with the missing slide.
 
 Unfortunately, this is where I got stuck. No matter what I tried, zipping the file back up would always result in a file that Powerpoint refused to open or repair. I thought that I'd missed out some other file, or messed up the editing somehow, and did not end up getting the flag. 😔
@@ -65,6 +77,6 @@ After saving it, we can open the file to reveal the hidden slide with the flag.
 
 <img width="1552" alt="Screenshot 2021-05-10 at 11 15 02" src="https://user-images.githubusercontent.com/40383042/117604224-69e13400-b187-11eb-807b-a22409b208a6.png">
 
-```
+```text
 Cyberthon{n0_l33k_k4pp4}
 ```

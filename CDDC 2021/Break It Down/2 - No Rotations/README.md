@@ -1,12 +1,14 @@
 # No Rotations
 
 ## Challenge Description
+
 We have taken control of their IRC channel for a short amount of time! We got an important message that was being broadcast to all the accounts in there! It has to be important! Please use the pieces wisely and make the message clear and readable.
 
 ## Attached files
 
 ### ciphered-message.txt
-```
+
+```text
 Mxx jia ThfacFpjr mca tmxxao jp pcoac! 
 Sj'r snbprrsfxa jp xaj jia carsrjmlta jia pbbpcjwlsjh jp xamk
 pwc slypcnmjspl mlhnpca! Fa tmcaywx!
@@ -17,13 +19,15 @@ yxmu sr TOOT21{rWfrJsjwJspl_TsBiAcslu}
 ```
 
 ### key.txt
-```
+
+```text
 key = 'MFTOAYUISVKXNLPBDCRJWQEGHZ'
 ```
 
 ---
 
 ## Solution
+
 Given the key, we can tell that this is a substitution cipher.
 
 Using the below script, I decoded the ciphered text.
@@ -48,7 +52,8 @@ print(decrypted)
 ```
 
 Output:
-```
+
+```text
 ALL THE CYBERBOTS ARE CALLED TO ORDER! 
 IT'S IMPOSSIBLE TO LET THE RESISTANCE THE OPPORTUNITY TO LEAK
 OUR INFORMATION ANYMORE! BE CAREFUL!
@@ -58,7 +63,8 @@ THE D-DAY SCHEDULE WILL BE INFORMED LATER.
 FLAG IS CDDC21{SUBSTITUTION_CIPHERING}
 ```
 
-### Flag:
-```
+### Flag
+
+```text
 CDDC21{SUBSTITUTION_CIPHERING}
 ```

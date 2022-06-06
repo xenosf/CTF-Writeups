@@ -1,6 +1,7 @@
 # Web Application III
 
 ## Challenge Description
+
 An attacker might get administrative access to a web application. However, this does not automatically mean that the web server can be compromised. In cases where a SaaS application is made available to users, it is routine to give each user admin access to his own instance of the web application e.g. a managed hosted Wordpress site. In such a scenario, the attacker who will begin accessing the application as a managed administrative user will have to figure out how to exploit the administrative interface to get a shell on the server. In some cases, it might be possible to do privilege escalation as well.
 
 In the exercise below, the attacker has administrative access to the web application and needs to find a command injection attack to run arbitrary commands on the server.
@@ -10,7 +11,9 @@ A version of WebCalendar is vulnerable to a command injection attack.
 **Objective:** Your task is to find and exploit this vulnerability.
 
 ## Instructions
+
 The following password may be used to explore the application and/or find a vulnerability which might require authenticated access:
+
 * WebCalendar password
 
 ---
@@ -33,12 +36,14 @@ The settings page can be accessed at `/install/index.php`, where we can enter th
 
 ![Screenshot 2021-06-23 at 14-27-42 WebCalendar Setup Wizard](https://user-images.githubusercontent.com/40383042/126046269-bc3e74c0-9fff-4145-a9cc-f98a864d148a.png)
 
-Out of all the possible fields, the only one we can change arbitrarily without blocking our access to the calendar itself is the cache directory. 
+Out of all the possible fields, the only one we can change arbitrarily without blocking our access to the calendar itself is the cache directory.
 
 We can inject some code to find a flag file, and output its contents:
+
 ```php
 ​*/?><?php echo `SHELL COMMAND HERE`; ?>
 ```
+
 ![Screenshot 2021-06-23 at 14-28-06 WebCalendar Setup Wizard](https://user-images.githubusercontent.com/40383042/126046376-b72153bc-745f-4371-865b-b39e1a6a2c75.png)
 
 The code injected escapes the PHP comments since the settings are stored in a commented PHP block.
@@ -50,13 +55,15 @@ To find the flag, I injected `find / -name flag`.
 The junk at the end after `/tmp/flag` is the remainder of the settings file.
 
 After finding the flag file `/tmp/flag`, I used `cat` to output its contents. Then, we can visit `/includes/settings.php`, which runs the code we injected, giving us the flag:
-```
+
+```php
 86f1d2cd0ff916575562da9eebba802b readonly: false user_inc: user.php use_http_auth: false single_user: true single_user_login: admin # end settings.php */ ?> 
 ```
 
 I could probably have injected an interactive web shell, since injecting something into `settings.php` prevented me from accessing the calendar afterwards, requiring me to restart the lab to inject another command. Regardless, I ended up only needing 2 commands.
 
-### Flag:
-```
+### Flag
+
+```text
 86f1d2cd0ff916575562da9eebba802b
 ```

