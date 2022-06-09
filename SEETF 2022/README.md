@@ -34,11 +34,11 @@ The beginner-friendly challenges have names that start with  `🧑‍🎓`
 * [Huh Where](OSINT/Huh%20Where) (100pts)
 * [Batnet 1](OSINT/Batnet%201) (100pts)
 * [Batnet 2 [unintended solution]](OSINT/Batnet%202%20%5Bunintended%20solution%5D) (995pts)
-
+-->
 ### Forensics
 
 * [🧑‍🎓 Sniffed Traffic](Forensics/Sniffed%20Traffic) (100pts)
-
+<!--
 ### Reverse Engineering
 
 * [🧑‍🎓 BestSoftware](Reverse%20Engineering/BestSoftware) (100pts)
