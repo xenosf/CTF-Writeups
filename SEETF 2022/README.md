@@ -53,6 +53,6 @@ The beginner-friendly challenges have names that start with  `🧑‍🎓`
 <!--* [🧑‍🎓 4mats](Pwn/4mats) (100pts)-->
 * [🧑‍🎓 Wayyang.py](Pwn/Wayyang.py) (100pts)
 
-## Miscellaneous
+### Miscellaneous
 
 * [🧑‍🎓 Regex101](Miscellaneous/Regex101) (100pts)
