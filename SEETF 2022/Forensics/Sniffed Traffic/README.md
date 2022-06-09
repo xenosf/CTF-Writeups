@@ -34,7 +34,9 @@ To do this, we can use this Wireshark filter:
 ip.src == 192.168.1.1/16 && ip.dst == 192.168.1.1/16
 ```
 
-<!--screenshot-->
+The `192.168.1.1/16` is in [CIDR notation](https://www.ionos.com/digitalguide/server/know-how/cidr-classless-inter-domain-routing/). A useful website to visualise the results of CIDR notation is [cidr.xyz](https://cidr.xyz).
+
+<img width="1239" alt="Screenshot of given file in Wireshark with filter applied" src="https://user-images.githubusercontent.com/40383042/172787828-275b9c43-368a-47a1-9251-ab2d1f2fe5f4.png">
 
 This massively narrows down the possible packets to search for. After briefly looking through the packets, we can see that a file called `thingamajig.zip` was transferred via HTTP.
 
@@ -42,11 +44,12 @@ We can extract this file and look at it by going to `File > Export Objects > HTT
 
 When we try to unzip `thingamajig.zip`, we realise it has a password. We can find the password in the sniffed traffic as well. We can try searching the packet bytes in Wireshark for the word "password":
 
-<!--screenshot-->
+<img width="1239" alt="Screenshot of given file in Wireshark with filter applied and searching for 'password'" src="https://user-images.githubusercontent.com/40383042/172790000-15915d98-de49-474f-b053-c3f44250dae9.png">
 
 We can follow this packet's stream to see the full exchange:
 
-<!--screenshot-->
+<img width="440" alt="Screenshot of Wireshark 'follow stream' option" src="https://user-images.githubusercontent.com/40383042/172790079-8f4bb3c0-3b14-4805-a2b9-490789782ee9.png">
+<img width="925" alt="Screenshot of followed stream contents with file password" src="https://user-images.githubusercontent.com/40383042/172790406-201a1b1d-651f-4cca-8778-ea31c90698ce.png">
 
 ```text
 49949ec89a41ed9bdd18c4ce74f37ae4
@@ -65,7 +68,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 1227          0x4CB           End of Zip archive, footer length: 22
 ```
 
-Inside `stuff`, there is a zip archive containing `flag.txt`.
+We can see that inside `stuff`, there is a zip archive containing `flag.txt`.
 
 Looking at the extracted contents, we can see another password-protected zip archive:
 
