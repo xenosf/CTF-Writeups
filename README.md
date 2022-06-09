@@ -16,3 +16,4 @@ You can also read these on [my website](https://blog.xenosf.io).
 * [DSTA Cyber Defenders Discovery Camp 2021 (Junior Category)](CDDC%202021)
 * [n0h4ts STANDCON 2021](STANDCON%202021)
 * [HCI IRS Sieberrsec CTF 3.0 (2021)](Sieberrsec%202021)
+* [Social Engineering Experts SEETF 2022](SEETF%202022)
