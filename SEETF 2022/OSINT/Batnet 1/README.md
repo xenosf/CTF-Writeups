@@ -71,7 +71,7 @@ The final account cannot be found using social media search tools such as Sherlo
 
 In the "About Me" section, there is a cryptic string:
 
-<img width="240" alt="Screenshot of the Discord profile containing base64 encoded flag" src="https://user-images.githubusercontent.com/40383042/173200812-b5c5cd96-ff39-46ba-9663-e5be1e8a65c8.png"
+<img width="240" alt="Screenshot of the Discord profile containing base64 encoded flag" src="https://user-images.githubusercontent.com/40383042/173200812-b5c5cd96-ff39-46ba-9663-e5be1e8a65c8.png">
 
 ```text
 cGFydCA0LzQKX2FiMHV0XzN2ZXJ5MG5lfQ==
