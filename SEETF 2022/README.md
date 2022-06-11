@@ -18,9 +18,7 @@ Many thanks to Social Engineering Experts for hosting this CTF!
 
 ## Flags
 
-The beginner-friendly challenges have names that start with  `🧑‍🎓`
-
-*To be written! Check back later :)*
+The beginner-friendly challenges have names that start with this emoji: 🧑‍🎓
 
 ### Web
 
