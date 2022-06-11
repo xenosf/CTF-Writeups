@@ -100,40 +100,7 @@ To change the server response halfway, we can use a [DNS rebinding attack](https
 
 DNS (Domain Name System) servers help tell browsers which IP address a domain (for example, `blog.xenosf.io`) points to.
 
-```mermaid
-flowchart LR
-  br((Browser))
-  dns([DNS Server])
-  sv[(Web Server)]
-  br -. 1. Domain name .-> dns
-  dns -. 2. IP address of the server .-> br
-  br -- 3. Request --> sv
-  sv -- 4. Response --> br
-```
-
 By changing the IP address for a particular domain, we can change where a particular domain leads to. The DNS server can switch the IP addresses extremely quickly, which allows us to bypass certain barriers, such as the SSRF prevention check in this challenge.
-
-```mermaid
-flowchart TB
-   subgraph Case B
-    br2((Browser))
-    dns2([DNS Server])
-    sv2[(Server B)]
-    br2 -. 1. Domain name .-> dns2
-    dns2 -. 2. IP of B .-> br2
-    br2 -- 3. Request --> sv2
-    sv2 -- 4. Response from B --> br2
-  end
-  subgraph Case A
-    br1((Browser))
-    dns1([DNS Server])
-    sv1[(Server A)]
-    br1 -. 1. Domain name .-> dns1
-    dns1 -. 2. IP of A .-> br1
-    br1 -- 3. Request --> sv1
-    sv1 -- 4. Response from A --> br1
-   end
-```
 
 There are multiple ways to do this, but we can use an [online DNS rebinding service](https://lock.cmpxchg8b.com/rebinder.html). Set one IP to `127.0.0.1` (localhost), and the other one to an arbitrary website's IP address.
 
