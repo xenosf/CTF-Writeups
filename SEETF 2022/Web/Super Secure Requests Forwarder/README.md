@@ -42,16 +42,27 @@ Visiting the provided URL takes us to a page with a text field to enter a URL to
 
 ![Screenshot of webpage with text field to enter URL to visit](https://user-images.githubusercontent.com/40383042/173179714-2b1f7513-8ea3-4ce0-817c-f7cdc52af0cb.png)
 
-Viewing the provided source, we can see that this app is a Flask server:
+Viewing the provided source, we can see that this app is a Flask server. We can see that there is a route `/flag` that shows the flag, only if the request remote address is `127.0.0.1` (localhost).
 
 ```py
-from flask import Flask, request, render_template
-import os
-import advocate
-import requests
+@app.route('/flag')
+def flag():
+    if request.remote_addr == '127.0.0.1':
+        return render_template('flag.html', FLAG=os.environ.get("FLAG"))
 
-app = Flask(__name__)
+    else:
+        return render_template('forbidden.html'), 403
+```
 
+To get the flag, we must visit `/flag` using the proxy so that the request comes from the server itself (thus localhost).
+
+However, entering `http://127.0.0.1/flag` or `http://localhost/flag` into the address bar of the page gets blocked:
+
+![Screenshot of page with error after visiting localhost](https://user-images.githubusercontent.com/40383042/173179733-e3799023-6e09-4600-b5b6-4b4e767c8da0.png)
+
+Examining the source code further, we can see that it uses a library called `advocate`. When making a request, it visits the URL using `advocate` first, which checks if the URL leads to the local machine. If not, it makes the request using the normal `requests` module and displays the page.
+
+```py
 @app.route('/', methods=['GET', 'POST'])
 def index():
 
@@ -69,30 +80,7 @@ def index():
         return render_template('index.html', result=r.text)
 
     return render_template('index.html')
-
-
-@app.route('/flag')
-def flag():
-    if request.remote_addr == '127.0.0.1':
-        return render_template('flag.html', FLAG=os.environ.get("FLAG"))
-
-    else:
-        return render_template('forbidden.html'), 403
-
-
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80, threaded=True)
 ```
-
-We can see that there is an endpoint `/flag` that shows the flag, only if the request remote address is `127.0.0.1` (localhost).
-
-To get the flag, we must visit `/flag` using the proxy.
-
-However, entering `http://127.0.0.1/flag` or `http://localhost/flag` into the address bar of the page gets blocked:
-
-![Screenshot of page with error after visiting localhost](https://user-images.githubusercontent.com/40383042/173179733-e3799023-6e09-4600-b5b6-4b4e767c8da0.png)
-
-Examining the source code further, we can see that it uses a library called `advocate`. When making a request, it visits the URL using `advocate` first, which checks if the URL leads to the local machine. If not, it makes the request using the normal `requests` module and displays the page.
 
 Since it makes two requests, if the server response from the same domain changes in between the two requests, then we can bypass this SSRF prevention.
 
