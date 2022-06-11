@@ -12,7 +12,7 @@ Bruce Wayne enjoys going for walks at park connectors and taking in the view of 
 
 Can you find out where this picture was taken?
 
-Flag format is the name of the place exactly as shown on Google Maps with no capital letters and no spaces. Example would be `SEE{123sesamestreet}``.
+Flag format is the name of the place exactly as shown on Google Maps with no capital letters and no spaces. Example would be `SEE{123sesamestreet}`.
 
 ## Attached files
 
