@@ -111,9 +111,27 @@ mat7:
 
 ## Solution
 
-### Understanding the program
+### Format string attack
 
-By reading the source code, we can understand how this program works:
+In C++, `printf()` can print strings. These strings can contain [format specifiers](https://cplusplus.com/reference/cstdio/printf/) to allow embedding of various types of data. For example:
+
+```cpp
+printf("Some numbers: %d, %d", 123, 4567);
+```
+
+This would print out `Some numbers: 123, 4567`. Each `%d` represents a decimal integer, and is replaced by one of the subsequent parameters/values.
+
+If raw user input is passed to the function, `printf` tries to replace any format specifiers in the input with values. If not enough other parameters are passed to the function, it replaces the rest with the first values from the stack (the program's memory) that it can find.
+
+We can use this to read various values on the stack. For example, the below statement would print the hexadecimal representation (`%x`) of the first 12 values of the stack, separated by `.`:
+
+```cpp
+printf("%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x");
+```
+
+### Pwning the program
+
+By reading the source code `vuln.c`, we can understand how the program `vuln` works:
 
 1. When run, the program first asks the user to input their name.
 
@@ -127,29 +145,23 @@ By reading the source code, we can understand how this program works:
 
     This part is repeated in an infinite loop.
 
-To correctly guess the number in 1 try, we have to access the randomly generated number somehow so that we can input it. To do this, we can use a format string attack.
+In flowchart form:
 
-### Format string attack
+![Flowchart of program](https://user-images.githubusercontent.com/40383042/173206484-37d35308-7d7f-4636-a10c-0042e574ceca.png)
 
-In C++, `printf()` can print strings. These strings can contain [format specifiers](https://cplusplus.com/reference/cstdio/printf/) to allow embedding of various types of data. For example:
+To get the flag, we have to access the randomly generated number somehow so that we can give the correct answer.
 
-```cpp
-printf("Some numbers: %d, %d", 123, 4567);
-```
-
-This would print out `Some numbers: 123, 4567`. Each `%d` represents a decimal integer, and is replaced by one of the subsequent parameters/values.
-
-If raw user input is passed to the function, `printf` tries to replace any format specifiers in the input with values. If no other parameters are passed to the function, it replaces these with the first values from the stack (the program's memory) it can find.
-
-We can use this to read various values on the stack. For example, the below statement would print the hexadecimal representation (`%x`) of the first 12 values of the stack, separated by `.`:
+One of the `printf` statements in Option 2 directly takes in raw user input, making it vulnerable to a format string exploit.
 
 ```cpp
-printf("%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x");
+...
+                printf("Same! I love \n");
+                printf(format);  // <------------ this one
+                printf("too!\n");
+...
 ```
 
-### Getting the flag
-
-By running Option 1 first (to generate the random number), then using a format string exploit in option 2, we can access the value of the random number.
+By running Option 1 first (to generate the random number), then using a format string exploit in option 2, we can read the values in the stack, including the generated number.
 
 ```text
 Let's get to know each other!
@@ -170,11 +182,11 @@ Same! I love
 too!
 ```
 
-After trying this a few times, we can infer that the random number is likely to be the 7th number printed, since the other values remain mostly constant. We now know how to access the correct number.
+After trying this a few times, we can infer that the generated number is likely to be the 7th number printed, since the other values remain mostly constant. We now know how to access the correct number.
 
-However, it generates a new number each time Option 1 is chosen. To bypass this, we have to use one of the conveniently placed `goto` statements to skip to the guessing part so it does not change the number before we guess. `goto mat4` would accomplish this, and thus we need to make `set` have a value of 4.
+However, it generates a new number each time Option 1 is chosen. To bypass this, we have to use one of the `goto` statements to skip to the guessing part so it does not change the number. `goto mat4` would accomplish this, and hence we need to make `set` have a value of 4.
 
-Putting all this together allows us to get the flag. This is done in 1 session, but I have split it for explanatory purposes.
+Putting all this together allows us to get the flag. (This is all done in 1 session, but I have split it up for explanatory purposes.)
 
 Firstly, we start the program:
 
@@ -186,7 +198,7 @@ heehoo
 Welcome: heehoo
 ```
 
-Then, we increment `set` 4 times by selecting Option 1 4 times so that `set == 4`.
+Then, we increment `set` 4 times by selecting Option 1 4 times so that `set == 4`:
 
 ```text
 Let's get to know each other!
@@ -219,7 +231,7 @@ Guess my favourite number!
 Not even close!
 ```
 
-Next, we select Option 2 and use a format string attack to print the first few values from the stack as decimal integers (`%d`). The random number from Option 1 is the 7th number printed, `83798`.
+Next, we select Option 2 and use a format string attack to print the first few values from the stack as decimal integers (`%d`). The random number from Option 1 is the 7th number printed, `83798`:
 
 ```text
 Let's get to know each other!
@@ -246,7 +258,6 @@ Guess my favourite number!
 Yes! You know me so well!
 SEE{4_f0r_4_f0rm4t5_0ebdc2b23c751d965866afe115f309ef}
 ```
-
 
 ### Flag
 
