@@ -136,7 +136,7 @@ elif choice == 4:
                 exit()
 ```
 
-However, we can also see that if it passes the check, it first `eval()`s our input and then `cat`s it:
+However, we can also see that if it passes the check, it first `eval()`s our input and then substitutes the result into a `cat` statement:
 
 ```py
         try:
@@ -145,7 +145,7 @@ However, we can also see that if it passes the check, it first `eval()`s our inp
             pass
 ```
 
-We can then make use of the Python method `.upper()` to convert a lowercase string `"flag"` to its uppercase version `"FLAG"`. Since it only blocks the uppercase characters, our input is allowed through and we can get the flag:
+The `eval()` function runs its input as Python code and returns the output. If we make our input evaluate to `"FLAG"` after running it in Python, we can make it run `cat FLAG`. To do this, we can make use of the Python method `.upper()` to convert a lowercase string `"flag"` to its uppercase version `"FLAG"`. Since it only blocks the uppercase characters, our input is allowed through and we can get the flag:
 
 ```text
 >> 4
