@@ -22,10 +22,10 @@ The beginner-friendly challenges have names that start with  `🧑‍🎓`
 
 *To be written! Check back later :)*
 
-<!--
 ### Web
 
 * [🧑‍🎓 Sourceless Guessy Web (Baby Flag)](Web/Sourceless%20Guessy%20Web%20%28Baby%20Flag%29) (100pts)
+<!--
 * [🧑‍🎓 Super Secure Requests Forwarder](Web/Super%20Secure%20Requests%20Forwarder) (100pts)
 * [Flag Portal (Flag 1) [unintended solution]](Web/Flag%20Portal%20%28Flag%201%29%20%5Bunintended%20solution%5D) (100pts)
 
