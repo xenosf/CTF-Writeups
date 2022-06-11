@@ -30,8 +30,8 @@ The beginner-friendly challenges have names that start with this emoji: 🧑‍�
 ### OSINT
 
 * [Huh Where](OSINT/Huh%20Where) (100pts)
-<!--
 * [Batnet 1](OSINT/Batnet%201) (100pts)
+<!--
 * [Batnet 2 *[unintended solution]*](OSINT/Batnet%202%20%5Bunintended%20solution%5D) (995pts)
 -->
 ### Forensics
