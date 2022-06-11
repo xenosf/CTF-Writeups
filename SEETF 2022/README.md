@@ -27,13 +27,14 @@ The beginner-friendly challenges have names that start with  `🧑‍🎓`
 * [🧑‍🎓 Sourceless Guessy Web (Baby Flag)](Web/Sourceless%20Guessy%20Web%20%28Baby%20Flag%29) (100pts)
 * [🧑‍🎓 Super Secure Requests Forwarder](Web/Super%20Secure%20Requests%20Forwarder) (100pts)
 <!--
-* [Flag Portal (Flag 1) [unintended solution]](Web/Flag%20Portal%20%28Flag%201%29%20%5Bunintended%20solution%5D) (100pts)
-
+* [Flag Portal (Flag 1) *[unintended solution]*](Web/Flag%20Portal%20%28Flag%201%29%20%5Bunintended%20solution%5D) (100pts)
+-->
 ### OSINT
 
 * [Huh Where](OSINT/Huh%20Where) (100pts)
+<!--
 * [Batnet 1](OSINT/Batnet%201) (100pts)
-* [Batnet 2 [unintended solution]](OSINT/Batnet%202%20%5Bunintended%20solution%5D) (995pts)
+* [Batnet 2 *[unintended solution]*](OSINT/Batnet%202%20%5Bunintended%20solution%5D) (995pts)
 -->
 ### Forensics
 
