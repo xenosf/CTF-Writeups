@@ -43,9 +43,9 @@ Visiting that URL, we end up at the original page. This seems vulnerable to a di
 ![Screenshot of web page containing the contents of /etc/passwd with text highlighted to show the white text](https://user-images.githubusercontent.com/40383042/173172916-0c60f890-d581-4f17-a78e-0f771909e9b6.png)
 
 ```text
-✂️--- SNIP ---✂️
+...
 usr sbin nologin SEE 2nd fl4g n33ds RCE g00d luck h4x0r
-✂️--- SNIP ---✂️
+...
 ```
 
 We can combine the words after `SEE` to form the flag.
