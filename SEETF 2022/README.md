@@ -50,7 +50,7 @@ The beginner-friendly challenges have names that start with this emoji: 🧑‍�
 
 ### Pwn
 
-<!--* [🧑‍🎓 4mats](Pwn/4mats) (100pts)-->
+* [🧑‍🎓 4mats](Pwn/4mats) (100pts)
 * [🧑‍🎓 Wayyang.py](Pwn/Wayyang.py) (100pts)
 
 ### Miscellaneous
