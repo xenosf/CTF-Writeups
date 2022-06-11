@@ -100,7 +100,11 @@ To change the server response halfway, we can use a [DNS rebinding attack](https
 
 DNS (Domain Name System) servers help tell browsers which IP address a domain (for example, `blog.xenosf.io`) points to.
 
-By changing the IP address for a particular domain, we can change where a particular domain leads to. The DNS server can switch the IP addresses extremely quickly, which allows us to bypass certain barriers, such as the SSRF prevention check in this challenge.
+![Diagram of how DNS works](https://user-images.githubusercontent.com/40383042/173181572-3f650c8a-8ffb-48f7-944d-50bef40ea44b.png)
+
+By changing the IP address for a particular domain, we can change where a particular domain leads to. The DNS server can switch between IP addresses extremely quickly, which allows us to bypass certain barriers, such as the SSRF prevention check in this challenge.
+
+![Diagram of how DNS works with 2 cases](https://user-images.githubusercontent.com/40383042/173181577-cd592ad5-8cab-479a-93a6-3c403baee0d6.png)
 
 There are multiple ways to do this, but we can use an [online DNS rebinding service](https://lock.cmpxchg8b.com/rebinder.html). Set one IP to `127.0.0.1` (localhost), and the other one to an arbitrary website's IP address.
 
