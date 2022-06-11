@@ -14,7 +14,7 @@ My name is "seetf" and my email is "seetf@seetf.sg". Thank you!
 
 For beginners:
 
-* https://www.jetbrains.com/decompiler/
+* [https://www.jetbrains.com/decompiler/](https://www.jetbrains.com/decompiler/)
 
 ## Attached files/Instructions
 
