@@ -26,6 +26,8 @@ For beginners:
 
 We can use the linked JetBrains decompiler, dotPeek, to decompile C# programs, such as `BestSoftware.exe`.
 
+![Screenshot of BestSoftware.exe decompiled using dotPeek](https://user-images.githubusercontent.com/40383042/173202037-bb2b519d-19ba-4316-ab80-614c7b1cfa0b.png)
+
 Looking at the source code, we can see the license key checker code:
 
 ```csharp
