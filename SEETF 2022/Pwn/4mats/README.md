@@ -182,7 +182,9 @@ Same! I love
 too!
 ```
 
-After trying this a few times, we can infer that the generated number is likely to be the 7th number printed, since the other values remain mostly constant. We now know how to access the correct number.
+In this case, the input was `%d %d %d %d %d %d %d %d %d %d`, which will cause it to print the first 10 values from the stack in decimal integer form. This form is convenient because we can directly copy and paste the number.
+
+After trying this a few times, we can infer that the generated number is likely to be the 7th number printed, since the other values remain mostly constant. We now know how to find the correct answer.
 
 However, it generates a new number each time Option 1 is chosen. To bypass this, we have to use one of the `goto` statements to skip to the guessing part so it does not change the number. `goto mat4` would accomplish this, and hence we need to make `set` have a value of 4.
 
