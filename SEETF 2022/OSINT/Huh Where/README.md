@@ -33,7 +33,7 @@ The image does not contain any metadata that could help us out, so we have to us
 * The location is near some railings
 * There are a few lamp posts
 
-![CleanShot 2022-06-11 at 23 17 19@2x](https://user-images.githubusercontent.com/40383042/173193841-aee44f4f-9934-4f6b-9b2d-348f2b09a238.png)
+![Challenge image with notable features highlighted](https://user-images.githubusercontent.com/40383042/173193841-aee44f4f-9934-4f6b-9b2d-348f2b09a238.png)
 
 We also know from the challenge description that the location is near a park connector.
 
