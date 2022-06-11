@@ -37,11 +37,12 @@ The beginner-friendly challenges have names that start with this emoji: 🧑‍�
 ### Forensics
 
 * [🧑‍🎓 Sniffed Traffic](Forensics/Sniffed%20Traffic) (100pts)
-<!--
+
 ### Reverse Engineering
 
 * [🧑‍🎓 BestSoftware](Reverse%20Engineering/BestSoftware) (100pts)
 
+<!--
 ## Smart Contract
 
 * [🧑‍🎓 Bonjour](Smart%20Contract/Bonjour) (100pts)
