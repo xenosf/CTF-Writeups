@@ -18,7 +18,7 @@ Note: There are two flags for this challenge.
 
 For beginners:
 
-* https://portswigger.net/web-security/file-path-traversal
+* [https://portswigger.net/web-security/file-path-traversal](https://portswigger.net/web-security/file-path-traversal)
 
 ----
 
