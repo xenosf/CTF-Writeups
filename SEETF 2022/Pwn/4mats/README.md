@@ -113,9 +113,9 @@ mat7:
 
 ### Format string attack
 
-In C++, `printf()` can print strings. These strings can contain [format specifiers](https://cplusplus.com/reference/cstdio/printf/) to allow embedding of various types of data. For example:
+In C/C++, `printf()` can print strings. These strings can contain [format specifiers](https://cplusplus.com/reference/cstdio/printf/) to allow embedding of various types of data. For example:
 
-```cpp
+```c
 printf("Some numbers: %d, %d", 123, 4567);
 ```
 
@@ -125,7 +125,7 @@ If raw user input is passed to the function, `printf` tries to replace any forma
 
 We can use this to read various values on the stack. For example, the below statement would print the hexadecimal representation (`%x`) of the first 12 values of the stack, separated by `.`:
 
-```cpp
+```c
 printf("%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x");
 ```
 
@@ -153,7 +153,7 @@ To get the flag, we have to access the randomly generated number somehow so that
 
 One of the `printf` statements in Option 2 directly takes in raw user input, making it vulnerable to a format string exploit.
 
-```cpp
+```c
 ...
                 printf("Same! I love \n");
                 printf(format);  // <------------ this one
