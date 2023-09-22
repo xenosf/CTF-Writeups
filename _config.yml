@@ -5,9 +5,9 @@ description: >-
   document my CTF journey :)
   This site contains write-ups and some personal thoughts on the CTFs in 
   which I have participated.
-domain: blog.xeniafiorenza.me
+domain: blog.xenosf.io
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.xeniafiorenza.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.xenosf.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 remote_theme: xeniafiorenza/jekyll-theme-purpletermx
