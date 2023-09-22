@@ -10,7 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.xenosf.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-remote_theme: xeniafiorenza/jekyll-theme-purpletermx
+remote_theme: xenosf/jekyll-theme-purpletermx
 markdown: GFM
 plugins:
   - jekyll-feed
